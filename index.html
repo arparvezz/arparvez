@@ -45,6 +45,7 @@
   </script>
 
   <!-- CSS HS -->
+  <link rel="stylesheet" href="./lib.css">
   <link rel="stylesheet" href="./main.css">
 </head>
 
@@ -84,9 +85,9 @@
 
       <div id="hs-navbar-header-floating" class="hidden hs-collapse overflow-hidden transition-all duration-300 basis-full grow md:block" aria-labelledby="hs-navbar-header-floating-collapse">
         <div class="flex flex-col md:flex-row md:items-center md:justify-end gap-2 md:gap-3 mt-3 md:mt-0 py-2 md:py-0 md:ps-7">
-          <a class="py-0.5 md:py-3 px-4 md:px-1 border-s-2 md:border-s-0 md:border-b-2 border-gray-800 font-medium text-gray-800 hover:text-gray-800 focus:outline-hidden dark:border-neutral-200 dark:text-neutral-200 dark:hover:text-neutral-200" href="#" aria-current="page">Home</a>
+          <a class="py-0.5 md:py-3 px-4 md:px-1 border-s-2 md:border-s-0 md:border-b-2 border-gray-800 font-medium text-gray-800 hover:text-gray-800 focus:outline-hidden dark:border-neutral-200 dark:text-neutral-200 dark:hover:text-neutral-200" href="#home" aria-current="page">Home</a>
           <a class="py-0.5 md:py-3 px-4 md:px-1 border-s-2 md:border-s-0 md:border-b-2 border-transparent text-gray-500 hover:text-gray-800 focus:outline-hidden dark:text-neutral-400 dark:hover:text-neutral-200" href="#projects">Work</a>
-          <a class="py-0.5 md:py-3 px-4 md:px-1 border-s-2 md:border-s-0 md:border-b-2 border-transparent text-gray-500 hover:text-gray-800 focus:outline-hidden dark:text-neutral-400 dark:hover:text-neutral-200" href="#">Reviews</a>
+          <a class="py-0.5 md:py-3 px-4 md:px-1 border-s-2 md:border-s-0 md:border-b-2 border-transparent text-gray-500 hover:text-gray-800 focus:outline-hidden dark:text-neutral-400 dark:hover:text-neutral-200" href="#experience">Experience</a>
         </div>
       </div>
     </nav>
@@ -114,7 +115,7 @@
       <!-- End Profile -->
 
       <!-- About -->
-      <div class="mt-8">
+      <div class="mt-8" id="home">
         <p class="text-sm text-gray-600 dark:text-neutral-400">
           I’m Ar Parvez — a dedicated WordPress and Shopify developer with strong expertise in PHP. Over the years, I’ve helped clients build high-performing websites, customize themes, and deliver smooth, user-friendly experiences across both platforms.
         </p>
@@ -516,7 +517,7 @@
       <!-- End Skills -->
 
       <!-- Work Experience -->
-      <div class="mt-10 sm:mt-14">
+      <div class="mt-10 sm:mt-14" id="experience">
         <h2 class="mb-5 font-medium text-gray-800 dark:text-neutral-200">
           Work experience
         </h2>
@@ -745,54 +746,134 @@
 
         <!-- List -->
         <ul class="space-y-10">
+          <!-- blog one -->
           <li>
             <p class="mb-2 text-sm text-gray-500 dark:text-neutral-500">
-              2024
+              2025
             </p>
             <h5 class="font-medium text-sm text-gray-800 dark:text-neutral-200">
-              The complete guide to OKRs
+              Why WordPress Should Be Your Go-To CMS
             </h5>
             <p class="mt-1 text-sm text-gray-500 dark:text-neutral-500">
-              How to make objectives and key results work for your company.
+              WordPress is the most flexible and beginner-friendly CMS available today. It lets you build any type...
             </p>
             <p class="mt-1">
-              <a class="text-sm text-gray-500 underline hover:text-gray-800 hover:decoration-2 focus:outline-hidden focus:decoration-2 dark:text-neutral-500 dark:hover:text-neutral-400" href="#">
+              <a class="text-sm text-gray-500 underline hover:text-gray-800 hover:decoration-2 focus:outline-hidden focus:decoration-2 dark:text-neutral-500 dark:hover:text-neutral-400" href="javascript:void(0)"  aria-haspopup="dialog" aria-expanded="false" aria-controls="blog-one" data-hs-overlay="#blog-one">
                 Continue reading
               </a>
+
+
+              <div id="blog-one" class="hs-overlay hidden size-full fixed top-0 start-0 z-80 overflow-x-hidden overflow-y-auto pointer-events-none" role="dialog" tabindex="-1" aria-labelledby="blog-one-label">
+                <div class="hs-overlay-animation-target hs-overlay-open:scale-100 hs-overlay-open:opacity-100 scale-95 opacity-0 ease-in-out transition-all duration-200 sm:max-w-lg sm:w-full m-3 sm:mx-auto min-h-[calc(100%-56px)] flex items-center">
+                  <div class="w-full flex flex-col bg-white border border-gray-200 shadow-2xs rounded-xl pointer-events-auto dark:bg-neutral-800 dark:border-neutral-700 dark:shadow-neutral-700/70">
+                    <div class="flex justify-between items-center py-3 px-4 border-b border-gray-200 dark:border-neutral-700">
+                      <h3 id="blog-one-label" class="font-bold text-gray-800 dark:text-white">
+                        Why WordPress Should Be Your Go-To CMS
+                      </h3>
+                      <button type="button" class="size-8 inline-flex justify-center items-center gap-x-2 rounded-full border border-transparent bg-gray-100 text-gray-800 hover:bg-gray-200 focus:outline-hidden focus:bg-gray-200 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-700 dark:hover:bg-neutral-600 dark:text-neutral-400 dark:focus:bg-neutral-600" aria-label="Close" data-hs-overlay="#blog-one">
+                        <span class="sr-only">Close</span>
+                        <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M18 6 6 18"></path>
+                          <path d="m6 6 12 12"></path>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="p-4 overflow-y-auto">
+                      <p class="mt-1 text-gray-800 dark:text-neutral-400">
+                        WordPress is the most flexible and beginner-friendly CMS available today. It lets you build any type of website — from blogs and portfolios to business sites and full eCommerce stores — without limitations. With thousands of themes and plugins, you can customize everything to match your brand and add features instantly. WordPress is also SEO-friendly, mobile-responsive, secure, and regularly updated, making it a reliable long-term choice. Whether you're a business owner or a developer, WordPress gives you complete control, scalability, and the freedom to grow your website however you want.
+                      </p>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
             </p>
           </li>
 
+          <!-- blog Two -->
           <li>
             <p class="mb-2 text-sm text-gray-500 dark:text-neutral-500">
-              2024
+              2025
             </p>
             <h5 class="font-medium text-sm text-gray-800 dark:text-neutral-200">
-              Enhancement in Customer Engagement
+              Top Tips for WordPress Speed Optimization: A Simple Guide to a Faster Website
             </h5>
             <p class="mt-1 text-sm text-gray-500 dark:text-neutral-500">
-              With the aim of optimizing customer interactions and boosting brand loyalty, the team at Preline leveraged Mailchimp's powerful tools and expertise to deliver exceptional results.
+              Website speed is one of the most important factors for user experience, SEO, and overall performance. A slow website loses visitors...
             </p>
             <p class="mt-1">
-              <a class="text-sm text-gray-500 underline hover:text-gray-800 hover:decoration-2 focus:outline-hidden focus:decoration-2 dark:text-neutral-500 dark:hover:text-neutral-400" href="#">
+              <a class="text-sm text-gray-500 underline hover:text-gray-800 hover:decoration-2 focus:outline-hidden focus:decoration-2 dark:text-neutral-500 dark:hover:text-neutral-400" href="javascript:void(0)"  aria-haspopup="dialog" aria-expanded="false" aria-controls="blog-two" data-hs-overlay="#blog-two">
                 Continue reading
               </a>
-            </p>
-          </li>
 
-          <li>
-            <p class="mb-2 text-sm text-gray-500 dark:text-neutral-500">
-              2023
-            </p>
-            <h5 class="font-medium text-sm text-gray-800 dark:text-neutral-200">
-              How Google Assistant now helps you record stories for kids
-            </h5>
-            <p class="mt-1 text-sm text-gray-500 dark:text-neutral-500">
-              Google is constantly updating its consumer AI, Google Assistant, with new features.
-            </p>
-            <p class="mt-1">
-              <a class="text-sm text-gray-500 underline hover:text-gray-800 hover:decoration-2 focus:outline-hidden focus:decoration-2 dark:text-neutral-500 dark:hover:text-neutral-400" href="#">
-                Continue reading
-              </a>
+
+              <div id="blog-two" class="hs-overlay hidden size-full fixed top-0 start-0 z-80 overflow-x-hidden overflow-y-auto pointer-events-none" role="dialog" tabindex="-1" aria-labelledby="blog-two-label">
+                <div class="hs-overlay-animation-target hs-overlay-open:scale-100 hs-overlay-open:opacity-100 scale-95 opacity-0 ease-in-out transition-all duration-200 sm:max-w-lg sm:w-full m-3 sm:mx-auto min-h-[calc(100%-56px)] flex items-center">
+                  <div class="w-full flex flex-col bg-white border border-gray-200 shadow-2xs rounded-xl pointer-events-auto dark:bg-neutral-800 dark:border-neutral-700 dark:shadow-neutral-700/70">
+                    <div class="flex justify-between items-center py-3 px-4 border-b border-gray-200 dark:border-neutral-700">
+                      <h3 id="blog-two-label" class="font-bold text-gray-800 dark:text-white">
+                        Top Tips for WordPress Speed Optimization: A Simple Guide to a Faster Website
+                      </h3>
+                      <button type="button" class="size-8 inline-flex justify-center items-center gap-x-2 rounded-full border border-transparent bg-gray-100 text-gray-800 hover:bg-gray-200 focus:outline-hidden focus:bg-gray-200 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-700 dark:hover:bg-neutral-600 dark:text-neutral-400 dark:focus:bg-neutral-600" aria-label="Close" data-hs-overlay="#blog-two">
+                        <span class="sr-only">Close</span>
+                        <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M18 6 6 18"></path>
+                          <path d="m6 6 12 12"></path>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="p-4 overflow-y-auto">
+                      <p class="mt-1 text-gray-800 dark:text-neutral-400">
+                        Website speed is one of the most important factors for user experience, SEO, and overall performance. A slow website loses visitors, reduces conversions, and ranks lower on search engines. The good news? WordPress offers a lot of ways to improve speed without needing advanced technical knowledge.
+                        Here are some of the most effective WordPress speed optimization tips you can apply right away.
+                      </p>
+                      
+                      <div>
+                        <h4 class="text-gray-800 dark:text-neutral-400">✔️ 1. Choose Quality Hosting</h4>
+                        <p class="text-gray-800 dark:text-neutral-400">Fast hosting is the foundation of a fast website. Use reliable providers with LiteSpeed or NGINX servers and avoid cheap shared hosting.</p>
+                        <br>
+
+                        <h4 class="text-gray-800 dark:text-neutral-400">✔️ 2. Use a Lightweight Theme</h4>
+                        <p class="text-gray-800 dark:text-neutral-400">Pick performance-optimized themes that are clean, responsive, and not loaded with unnecessary features.</p>
+                        <br>
+
+                        <h4 class="text-gray-800 dark:text-neutral-400">✔️ 3. Install a Caching Plugin</h4>
+                        <p class="text-gray-800 dark:text-neutral-400">Caching reduces server load and speeds up pages instantly. Tools like LiteSpeed Cache, WP Rocket, or W3 Total Cache handle caching and compression automatically.</p>
+                        <br>
+
+                        <h4 class="text-gray-800 dark:text-neutral-400">✔️ 4. Optimize Images</h4>
+                        <p class="text-gray-800 dark:text-neutral-400">Compress images, use WebP format, and enable lazy loading to reduce file size and improve loading times.</p>
+                        <br>
+
+                        <h4 class="text-gray-800 dark:text-neutral-400">✔️ 5. Minify CSS, JS & HTML</h4>
+                        <p class="text-gray-800 dark:text-neutral-400">Minify and combine files to reduce page weight. Most caching plugins offer these optimization features.</p>
+                        <br>
+
+                        <h4 class="text-gray-800 dark:text-neutral-400">✔️ 6. Use a CDN</h4>
+                        <p class="text-gray-800 dark:text-neutral-400">A CDN delivers content from servers closest to the visitor, improving global load times. Popular options include Cloudflare and BunnyCDN.</p>
+                        <br>
+
+                        <h4 class="text-gray-800 dark:text-neutral-400">✔️ 7. Clean Your Database</h4>
+                        <p class="text-gray-800 dark:text-neutral-400">Remove old revisions, spam, and temporary data. Plugins like WP-Optimize help keep your database light and efficient.</p>
+                        <br>
+
+                        <h4 class="text-gray-800 dark:text-neutral-400">✔️ 8. Limit Unnecessary Plugins</h4>
+                        <p class="text-gray-800 dark:text-neutral-400">Fewer plugins mean faster performance. Remove unused plugins and avoid heavy all-in-one solutions.</p>
+                        <br>
+
+                        <h4 class="text-gray-800 dark:text-neutral-400">✔️ 9. Enable GZIP/Brotli Compression</h4>
+                        <p class="text-gray-800 dark:text-neutral-400">Compression makes your files smaller and loads pages faster. Most hosting and caching plugins support this.</p>
+                        <br>
+
+                        <h4 class="text-gray-800 dark:text-neutral-400">✔️ 10. Keep WordPress Updated</h4>
+                        <p class="text-gray-800 dark:text-neutral-400">Regularly update WordPress core, themes, and plugins to ensure better performance, stability, and security.</p>
+
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
             </p>
           </li>
         </ul>
@@ -901,11 +982,13 @@
 
   <!-- JS PLUGINS -->
   <!-- Required plugins -->
+  <script src="./lib.js"></script>
   <script src="./script.js"></script>
 
   <!-- JS THIRD PARTY PLUGINS -->
   <!-- Google Analytics. Global site tag (gtag.js) -->
   <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-B73TDMXKF5"></script> -->
+   <script type="module"> import preline from 'https://cdn.jsdelivr.net/npm/preline@3.2.3/+esm' </script>
   <script>
     window.dataLayer = window.dataLayer || [];
   
