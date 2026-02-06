@@ -1,988 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Required Meta Tags Always Come First -->
   <meta charset="utf-8">
-  <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Experienced WordPress and Shopify developer skilled in crafting custom themes, optimizing performance, and delivering seamless eCommerce solutions.">
-
-
-  <!-- Title -->
-  <title>Ar parvez | WordPress & Shopify Developer</title>
-
-  <!-- Favicon -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio of Ar Parvez, WordPress & Shopify developer building fast, scalable web experiences.">
+  <title>Ar Parvez | Web Developer</title>
   <link rel="shortcut icon" href="./assets/favicon.png">
-
-  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-  <!-- Theme Check and Update -->
-  <script>
-    const html = document.querySelector('html');
-    const isLightOrAuto = localStorage.getItem('hs_theme') === 'light' || (localStorage.getItem('hs_theme') === 'auto' && !window.matchMedia('(prefers-color-scheme: dark)').matches);
-    const isDarkOrAuto = localStorage.getItem('hs_theme') === 'dark' || (localStorage.getItem('hs_theme') === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches);
-
-    if (isLightOrAuto && html.classList.contains('dark')) html.classList.remove('dark');
-    else if (isDarkOrAuto && html.classList.contains('light')) html.classList.remove('light');
-    else if (isDarkOrAuto && !html.classList.contains('dark')) html.classList.add('dark');
-    else if (isLightOrAuto && !html.classList.contains('light')) html.classList.add('light');
-  </script>
-
-  <!-- CSS HS -->
-  <link rel="stylesheet" href="./lib.css">
-  <link rel="stylesheet" href="./main.css">
+  <link rel="stylesheet" href="./style.css">
 </head>
-
-<body class="dark:bg-neutral-900">
-  <!-- ========== HEADER ========== -->
-  <header class="sticky top-0 inset-x-0 flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full text-sm">
-    <nav class="mt-4 relative max-w-2xl w-full bg-white border border-gray-200 rounded-[24px] mx-2 flex flex-wrap md:flex-nowrap items-center justify-between p-1 ps-4 md:py-0 sm:mx-auto dark:bg-neutral-900 dark:border-neutral-700">
-      <div class="flex items-center">
-        <!-- Logo -->
-        <a class="flex-none rounded-md text-xl inline-block font-semibold focus:outline-hidden focus:opacity-80" href="#home" aria-label="Preline">
-          <img class="size-30 h-6" src="./assets/Ar parvez logo (1).png" alt="">
-        </a>
-        <!-- End Logo -->
-      </div>
-
-      <div class="flex items-center gap-1 md:order-4 md:ms-4">
-        <a class="w-full sm:w-auto whitespace-nowrap py-2 px-3 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-full border border-transparent bg-gray-800 text-white hover:bg-gray-900 focus:outline-hidden focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:bg-white dark:text-neutral-800 dark:hover:bg-neutral-200" href="mailto:arparvez.dev@gmail.com">
-          Contact Now
-        </a>
-
-        <div class="md:hidden">
-          <!-- Toggle Button -->
-          <button type="button" class="hs-collapse-toggle flex justify-center items-center size-9.5 border border-gray-200 text-gray-500 rounded-full hover:bg-gray-200 focus:outline-hidden focus:bg-gray-200 dark:border-neutral-700 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700" id="hs-navbar-header-floating-collapse" aria-expanded="false" aria-controls="hs-navbar-header-floating" aria-label="Toggle navigation" data-hs-collapse="#hs-navbar-header-floating">
-            <svg class="hs-collapse-open:hidden shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <line x1="3" x2="21" y1="6" y2="6" />
-              <line x1="3" x2="21" y1="12" y2="12" />
-              <line x1="3" x2="21" y1="18" y2="18" />
-            </svg>
-            <svg class="hs-collapse-open:block hidden shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M18 6 6 18" />
-              <path d="m6 6 12 12" />
-            </svg>
-          </button>
-          <!-- End Toggle Button -->
-        </div>
-      </div>
-
-      <div id="hs-navbar-header-floating" class="hidden hs-collapse overflow-hidden transition-all duration-300 basis-full grow md:block" aria-labelledby="hs-navbar-header-floating-collapse">
-        <div class="flex flex-col md:flex-row md:items-center md:justify-end gap-2 md:gap-3 mt-3 md:mt-0 py-2 md:py-0 md:ps-7">
-          <a class="py-0.5 md:py-3 px-4 md:px-1 border-s-2 md:border-s-0 md:border-b-2 border-gray-800 font-medium text-gray-800 hover:text-gray-800 focus:outline-hidden dark:border-neutral-200 dark:text-neutral-200 dark:hover:text-neutral-200" href="#home" aria-current="page">Home</a>
-          <a class="py-0.5 md:py-3 px-4 md:px-1 border-s-2 md:border-s-0 md:border-b-2 border-transparent text-gray-500 hover:text-gray-800 focus:outline-hidden dark:text-neutral-400 dark:hover:text-neutral-200" href="#projects">Work</a>
-          <a class="py-0.5 md:py-3 px-4 md:px-1 border-s-2 md:border-s-0 md:border-b-2 border-transparent text-gray-500 hover:text-gray-800 focus:outline-hidden dark:text-neutral-400 dark:hover:text-neutral-200" href="#experience">Experience</a>
-        </div>
+<body>
+  <header class="site-header" id="top">
+    <nav class="nav">
+      <a class="logo" href="#top">
+        <img src="./assets/Ar parvez logo (1).png" alt="Ar Parvez logo">
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a class="button ghost" href="#contact">Contact</a>
       </div>
     </nav>
   </header>
-  <!-- ========== END HEADER ========== -->
 
-  <!-- ========== MAIN CONTENT ========== -->
-  <main id="content">
-    <div class="w-full max-w-2xl mx-auto pt-10 px-4 sm:px-6 lg:px-8">
-      <!-- Profile -->
-      <div class="flex items-center gap-x-3">
-        <div class="shrink-0">
-          <img class="shrink-0 size-16 rounded-full" src="./assets/Ar parvez.jpg" alt="Avatar">
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">WordPress • Shopify • PHP</p>
+        <h1>Hi, I’m Ar Parvez — I design and build conversion-focused web experiences.</h1>
+        <p class="lead">
+          I craft custom WordPress and Shopify sites with fast performance, clean code, and thoughtful UX.
+          From landing pages to full eCommerce builds, I translate business goals into measurable results.
+        </p>
+        <div class="hero-actions">
+          <a class="button" href="mailto:arparvez.dev@gmail.com">Let’s work together</a>
+          <a class="button ghost" href="#projects">View projects</a>
         </div>
+        <div class="hero-stats">
+          <div>
+            <strong>6+ years</strong>
+            <span>web development</span>
+          </div>
+          <div>
+            <strong>40+ sites</strong>
+            <span>delivered worldwide</span>
+          </div>
+          <div>
+            <strong>Remote</strong>
+            <span>available for hire</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-card">
+        <img class="profile" src="./assets/Ar parvez.jpg" alt="Portrait of Ar Parvez">
+        <div class="hero-card-content">
+          <h2>Delivering sites that feel premium and perform fast.</h2>
+          <p>Focused on responsive layouts, SEO-ready structure, and reusable components for long-term scale.</p>
+          <div class="chip-row">
+            <span>WordPress</span>
+            <span>Shopify</span>
+            <span>PHP</span>
+            <span>Elementor</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <div class="grow">
-          <h1 class="text-lg font-medium text-gray-800 dark:text-neutral-200">
-            Ar parvez
-          </h1>
-          <p class="text-sm text-gray-600 dark:text-neutral-400">
-           WordPress Developer | Shopify Developer | PHP Developer
+    <section class="section" id="about">
+      <div class="section-heading">
+        <h2>About me</h2>
+        <p>Developer, problem solver, and collaborative partner for modern brands.</p>
+      </div>
+      <div class="grid two">
+        <div class="card">
+          <h3>Client-first collaboration</h3>
+          <p>
+            I work closely with founders and marketing teams to align technical decisions with business outcomes.
+            Expect clear communication, transparent timelines, and clean documentation.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Performance and polish</h3>
+          <p>
+            Every build is optimized for speed, accessibility, and conversions. I bring UI precision and backend
+            reliability to every project I ship.
           </p>
         </div>
       </div>
-      <!-- End Profile -->
-
-      <!-- About -->
-      <div class="mt-8" id="home">
-        <p class="text-sm text-gray-600 dark:text-neutral-400">
-          I’m Ar Parvez — a dedicated WordPress and Shopify developer with strong expertise in PHP. Over the years, I’ve helped clients build high-performing websites, customize themes, and deliver smooth, user-friendly experiences across both platforms.
+      <div class="highlight">
+        <p>
+          “Ar Parvez quickly understood our goals and delivered a polished site with an intuitive CMS. The launch
+          was smooth and our team now feels confident updating the content.”
         </p>
-
-        <p class="mt-3 text-sm text-gray-600 dark:text-neutral-400">
-          I work remotely, focusing on creating clean, optimized code, developing custom features, and ensuring every project runs efficiently from backend logic to frontend presentation. I’m passionate about building functional, scalable solutions that help brands grow and users enjoy a seamless digital experience.
-        </p>
-
-        <ul class="mt-5 flex flex-col gap-y-3">
-          <li class="flex items-center gap-x-2.5">
-            <svg class="shrink-0 size-3.5 text-gray-800 dark:text-neutral-200" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <rect width="20" height="16" x="2" y="4" rx="2" />
-              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-            </svg>
-            <a class="text-[13px] text-gray-500 underline hover:text-gray-800 hover:decoration-2 focus:outline-hidden focus:decoration-2 dark:text-neutral-500 dark:hover:text-neutral-400" href="mailto:arparvez.dev@gmail.com">
-              arparvez.dev@gmail.com
-            </a>
-          </li>
-
-          <li class="flex items-center gap-x-2.5">
-            <svg class="shrink-0 size-3.5 text-gray-800 dark:text-neutral-200" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M14.1881 10.1624L22.7504 0H20.7214L13.2868 8.82385L7.34878 0H0.5L9.47944 13.3432L0.5 24H2.5291L10.3802 14.6817L16.6512 24H23.5L14.1881 10.1624ZM11.409 13.4608L3.26021 1.55962H6.37679L20.7224 22.5113H17.6058L11.409 13.4613V13.4608Z" fill="currentColor" />
-            </svg>
-            <a class="text-[13px] text-gray-500 underline hover:text-gray-800 hover:decoration-2 focus:outline-hidden focus:decoration-2 dark:text-neutral-500 dark:hover:text-neutral-400" href="https://x.com/Arparvez1">
-              @Arparvez1
-            </a>
-          </li>
-
-          <li class="flex items-center gap-x-2.5">
-            <svg class="shrink-0 size-3.5 text-gray-800 dark:text-neutral-200" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin-icon lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
-            <a class="text-[13px] text-gray-500 underline hover:text-gray-800 hover:decoration-2 focus:outline-hidden focus:decoration-2 dark:text-neutral-500 dark:hover:text-neutral-400" href="https://www.linkedin.com/in/arparvez/">
-              @arparvez
-            </a>
-          </li>
-          <li class="flex items-center gap-x-2.5">
-            <svg class="shrink-0 size-3.5 text-gray-800 dark:text-neutral-200"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github-icon lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
-            <a class="text-[13px] text-gray-500 underline hover:text-gray-800 hover:decoration-2 focus:outline-hidden focus:decoration-2 dark:text-neutral-500 dark:hover:text-neutral-400" href="https://github.com/arparvezz">
-              @arparvezz
-            </a>
-          </li>
-        </ul>
+        <span>— Recent client feedback</span>
       </div>
-      <!-- End About -->
+    </section>
 
-      <!-- Projects -->
-      <div class="mt-10 sm:mt-14" id="projects">
-
-
-        <div class="w-full max-w-2xl mx-auto">
-    <!-- Portfolio Section -->
-    <div class="mt-10 sm:mt-14">
-      <h2 class="mb-5 font-medium text-gray-800 dark:text-neutral-200">
-        Portfolio
-      </h2>
-
-      <!-- Portfolio Grid -->
-      <div class="space-y-6">
-        
-        <!-- Portfolio Card 1 -->
-        <div class="group relative overflow-hidden rounded-xl border border-gray-200 dark:border-neutral-700 hover:shadow-lg transition-all duration-300">
-          <div class="flex flex-col sm:flex-row">
-            <!-- Image -->
-
-            <div class="sm:w-1/2 h-64 sm:h-auto relative overflow-hidden">
-              <img 
-                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" 
-                src="./assets/sbteng-portfolio-img.jpg" 
-                alt="E-commerce Project">
-              <div class="absolute top-3 start-3">
-                  <span class="inline-flex items-center text-xs px-2 py-1 rounded-md bg-gray-100 text-gray-600 dark:bg-neutral-800 dark:text-neutral-400">
-                  WordPress
-                </span>
-              </div>
-            </div>
-            
-            <!-- Content -->
-              <div class="sm:w-1/2 p-5 flex flex-col justify-between">
-
-              <!-- </div>
-            <div class="sm:w-3/5 p-5 flex flex-col justify-between"> -->
-              <div>
-                <h3 class="text-lg font-semibold text-gray-800 dark:text-neutral-200 mb-2">
-                  WordPress Business Website
-                </h3>
-                <p class="text-sm text-gray-600 dark:text-neutral-400 mb-4">
-                  Engineering company website built with WordPress, featuring a clean Elementor design, optimized service layout, and fully responsive structure. Developed for professional branding and easy client navigation.
-                </p>
-                <div class="flex flex-wrap gap-2 mb-4">
-                  <span class="text-xs px-2 py-1 rounded-md bg-gray-100 text-gray-600 dark:bg-neutral-800 dark:text-neutral-400">WordPress</span>
-                  <span class="text-xs px-2 py-1 rounded-md bg-gray-100 text-gray-600 dark:bg-neutral-800 dark:text-neutral-400">Elementor</span>
-                  <span class="text-xs px-2 py-1 rounded-md bg-gray-100 text-gray-600 dark:bg-neutral-800 dark:text-neutral-400">Astra</span>
-                </div>
-              </div>
-              <div>
-                <a href="https://sbteng.com/" target="_blank" class="inline-flex items-center gap-x-2 text-sm font-medium text-gray-800 hover:text-blue-600 dark:text-neutral-200 dark:hover:text-blue-500 transition-colors">
-                  View Project
-                  <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M5 12h14"/>
-                    <path d="m12 5 7 7-7 7"/>
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
+    <section class="section" id="services">
+      <div class="section-heading">
+        <h2>What I do</h2>
+        <p>End-to-end web development with a focus on growth, maintainability, and conversions.</p>
+      </div>
+      <div class="grid three">
+        <div class="card icon">
+          <h3>Custom WordPress builds</h3>
+          <p>Theme development, Elementor builds, and flexible CMS workflows built for non-technical teams.</p>
         </div>
-
-        <!-- Portfolio Card - backup -->
-        <!-- <div class="group relative overflow-hidden rounded-xl border border-gray-200 dark:border-neutral-700 hover:shadow-lg transition-all duration-300">
-          <div class="flex flex-col sm:flex-row">
-            
-            <div class="sm:w-2/5 h-48 sm:h-auto relative overflow-hidden">
-              <img 
-                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" 
-                src="https://images.unsplash.com/photo-1557821552-17105176677c?w=600&auto=format&fit=crop" 
-                alt="Shopify Store">
-              <div class="absolute top-3 left-3">
-                <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-white/90 text-gray-800 dark:bg-neutral-900/90 dark:text-neutral-200">
-                  Shopify
-                </span>
-              </div>
-            </div>
-            
-            
-            <div class="sm:w-3/5 p-5 flex flex-col justify-between">
-              <div>
-                <h3 class="text-lg font-semibold text-gray-800 dark:text-neutral-200 mb-2">
-                  Fashion Boutique Store
-                </h3>
-                <p class="text-sm text-gray-600 dark:text-neutral-400 mb-4">
-                  Custom Shopify theme with Liquid customization, dynamic product sections, and seamless payment integration for a modern shopping experience.
-                </p>
-                <div class="flex flex-wrap gap-2 mb-4">
-                  <span class="text-xs px-2 py-1 rounded-md bg-gray-100 text-gray-600 dark:bg-neutral-800 dark:text-neutral-400">Liquid</span>
-                  <span class="text-xs px-2 py-1 rounded-md bg-gray-100 text-gray-600 dark:bg-neutral-800 dark:text-neutral-400">Theme Dev</span>
-                  <span class="text-xs px-2 py-1 rounded-md bg-gray-100 text-gray-600 dark:bg-neutral-800 dark:text-neutral-400">Responsive</span>
-                </div>
-              </div>
-              <div>
-                <a href="#" class="inline-flex items-center gap-x-2 text-sm font-medium text-gray-800 hover:text-blue-600 dark:text-neutral-200 dark:hover:text-blue-500 transition-colors">
-                  View Project
-                  <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M5 12h14"/>
-                    <path d="m12 5 7 7-7 7"/>
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
-
-      </div>
-      <!-- End Portfolio Grid -->
-
-    </div>
-    <!-- End Portfolio Section -->
-  </div>
-      </div>
-      <!-- End Projects -->
-
-      <!-- Testimonials -->
-      <div class="mt-10 sm:mt-14">
-        <h2 class="mb-3 font-medium text-gray-800 dark:text-neutral-200">
-          Testimonials
-        </h2>
-
-        <!-- Grid -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-3 border-y border-gray-200 divide-y sm:divide-y-0 sm:divide-x divide-gray-200 dark:border-neutral-700 dark:divide-neutral-700">
-          <div class="sm:-ms-4 py-6 sm:px-4">
-            <!-- Review -->
-            <blockquote>
-              <span class="text-sm text-gray-800 dark:text-neutral-200">Ar Parvez is a very experienced person in web designer. He has a particular passion for his work. He is a great asset for any job. I am very much pleased to recommend him.</span>
-
-              <footer class="mt-3">
-                <div class="flex items-center gap-x-2">
-                  <img class="shrink-0 size-5 rounded-full" src="/assets/sadri-hasan.png" alt="Avatar">
-                  <div class="grow">
-                    <div class="text-xs text-gray-500 dark:text-neutral-500">Sadri Hasan</div>
-                  </div>
-                </div>
-              </footer>
-            </blockquote>
-            <!-- End Review -->
-          </div>
-
-          <div class="py-6 sm:px-4">
-            <!-- Review -->
-            <blockquote>
-              <span class="text-sm text-gray-800 dark:text-neutral-200">Great Developer with excellent skills. Very friendly. Highly recommended.</span>
-
-              <footer class="mt-3">
-                <div class="flex items-center gap-x-2">
-                  <img class="shrink-0 size-5 rounded-full" src="./assets/sm-hasan.png" alt="Avatar">
-                  <div class="grow">
-                    <div class="text-xs text-gray-500 dark:text-neutral-500">S.M. ZAHID HASSAN KHAN</div>
-                  </div>
-                </div>
-              </footer>
-            </blockquote>
-            <!-- End Review -->
-          </div>
+        <div class="card icon">
+          <h3>Shopify store design</h3>
+          <p>Product-focused storefronts, optimized checkout flows, and high-performing landing pages.</p>
         </div>
-        <!-- End Grid -->
-      </div>
-      <!-- End Testimonials -->
-
-      <!-- Skills -->
-      <div class="my-10 sm:my-14">
-        <h2 class="mb-5 font-medium text-gray-800 dark:text-neutral-200">
-          Skills
-        </h2>
-
-        <!-- List -->
-        <div class="space-y-3">
-          <!-- <dl class="flex flex-col sm:flex-row gap-1">
-            <dt class="min-w-40">
-              <span class="block text-sm text-gray-500 dark:text-neutral-500">Development Skills:</span>
-            </dt>
-            <dd>
-              <ul>
-                <li class="me-1 after:content-[','] inline-flex items-center text-sm text-gray-800 dark:text-neutral-200">
-                  <svg class="shrink-0 size-4 me-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z" />
-                    <path d="M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z" />
-                    <path d="M12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0z" />
-                    <path d="M5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 1 1-7 0z" />
-                    <path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z" />
-                  </svg>
-                  Figma
-                </li>
-                <li class="me-1 after:content-[','] inline-flex items-center text-sm text-gray-800 dark:text-neutral-200">
-                  <svg class="shrink-0 size-4 me-1" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.0597 0.32329C11.02 0.31932 10.98 0.31932 10.9403 0.32329L5.3403 0.883285C5.17075 0.900245 5.0164 0.988485 4.91578 1.126L0.119634 7.68074C0.0464736 7.77832 0.00235197 7.89893 9.11713e-05 8.02973C3.03713e-05 8.03325 0 8.03679 0 8.04031L4.76837e-06 8.04274C0.000580768 8.18808 0.0528336 8.32124 0.139339 8.42477L10.5367 21.0616C10.6506 21.2001 10.8206 21.2803 11 21.2803C11.1794 21.2803 11.3494 21.2001 11.4633 21.0616L21.8606 8.42479C21.9472 8.32125 21.9994 8.18808 22 8.04274V8.03301C21.9998 8.0237 21.9995 8.0144 21.999 8.00511C21.992 7.8838 21.949 7.77216 21.8803 7.68072L17.0842 1.126C16.9835 0.988485 16.8293 0.900245 16.6597 0.883285L11.0597 0.32329ZM16.48 7.44031V7.40407L16.4757 7.44031H16.48ZM16.4947 7.28026H20.1003L16.9992 3.04205L16.4947 7.28026ZM15.9131 2.01461L11.8709 1.61039L15.2795 7.33684L15.9131 2.01461ZM10.1291 1.61039L6.0869 2.01461L6.7205 7.33684L10.1291 1.61039ZM5.00074 3.04205L1.89962 7.28026H5.50528L5.00074 3.04205ZM1.87066 8.64031L9.81378 18.2942L5.75794 8.70733C5.74859 8.68525 5.74102 8.66285 5.73518 8.64031H1.87066ZM7.24088 8.64031L11 18.3739L14.7591 8.64031H7.24088ZM16.2648 8.64031C16.259 8.66285 16.2514 8.68525 16.2421 8.70733L12.1862 18.2942L20.1293 8.64031H16.2648ZM11 2.49337L13.9446 7.44031H8.05539L11 2.49337Z" fill="currentColor" />
-                  </svg>
-                  Sketch
-                </li>
-              </ul>
-            </dd>
-          </dl> -->
-
-          <dl class="flex flex-col sm:flex-row gap-1">
-            <dt class="min-w-40">
-              <span class="block text-sm text-gray-500 dark:text-neutral-500">Development:</span>
-            </dt>
-            <dd>
-              <ul>
-                <li class="me-1 after:content-[','] inline-flex items-center text-sm text-gray-800 dark:text-neutral-200">
-                  <svg class="shrink-0 size-4 me-1" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3.41014 21.6082L1.5 0H22.5L20.5899 21.5965L11.9826 24" fill="currentColor" />
-                    <path d="M12.5 22V2H20.5L18.9734 20.083" fill="currentColor" />
-                    <path d="M5.5 4H12.5V6.64672H8.55789L8.81579 9.35756H12.5V11.9984H6.2614M6.38421 13.3276H9.18421L9.3807 15.4438L12.5 16.2367V19L6.77719 17.4843" fill="white" fill-opacity="0.8" />
-                    <path d="M18.5 4H12.5V6.64877H18.2786M18.0624 9.36173H12.5V12.0105H15.4525L15.1731 15.4527L12.5 16.2462V19L17.4033 17.4948" fill="white" />
-                  </svg>
-                  HTML
-                </li>
-                <li class="me-1 after:content-[','] inline-flex items-center text-sm text-gray-800 dark:text-neutral-200">
-                  <svg class="shrink-0 size-4 me-1" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3.3448 21.6009L1.41895 0H22.5809L20.653 21.5975L11.987 24L3.3448 21.6009Z" fill="currentColor" />
-                    <path d="M19.0026 20.2227L20.6501 1.7666H12V22.1641L19.0026 20.2227Z" fill="currentColor" />
-                    <path d="M5.83407 9.77721L6.0715 12.4264H12V9.77721H5.83407ZM5.59778 7.06432H12V4.41504H5.35693L5.59778 7.06432ZM12 16.6576L11.9884 16.6607L9.03789 15.864L8.84931 13.7511H6.18981L6.56101 17.9108L11.9878 19.4174L12 19.414V16.6576Z" fill="white" fill-opacity="0.8" />
-                    <path d="M11.9907 9.77721V12.4264H15.253L14.9455 15.8623L11.9907 16.6598V19.4161L17.4218 17.9108L17.4617 17.4632L18.0842 10.4886L18.1489 9.77721L18.6271 4.41504H11.9907V7.06432H15.7238L15.4827 9.77721H11.9907Z" fill="white" />
-                  </svg>
-                  CSS
-                </li>
-                <li class="me-1 after:content-[','] inline-flex items-center text-sm text-gray-800 dark:text-neutral-200">
-                  <svg class="shrink-0 size-4 me-1" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 5C8.8 5 6.8 6.6 6 9.8C7.2 8.2 8.6 7.6 10.2 8C11.1129 8.228 11.7653 8.89067 12.4876 9.62356C13.664 10.8178 15.0258 12.2 18 12.2C21.2 12.2 23.2 10.6 24 7.4C22.8 9 21.4 9.6 19.8 9.2C18.8871 8.972 18.2347 8.30933 17.5124 7.57644C16.336 6.38222 14.9742 5 12 5ZM6 12.2C2.8 12.2 0.8 13.8 0 17C1.2 15.4 2.6 14.8 4.2 15.2C5.11289 15.4284 5.76533 16.0907 6.48756 16.8236C7.664 18.0178 9.02578 19.4 12 19.4C15.2 19.4 17.2 17.8 18 14.6C16.8 16.2 15.4 16.8 13.8 16.4C12.8871 16.172 12.2347 15.5093 11.5124 14.7764C10.336 13.5822 8.97422 12.2 6 12.2Z" fill="currentColor" />
-                  </svg>
-                  Tailwind CSS
-                </li>
-                
-                <li class="me-1 after:content-[','] inline-flex items-center text-sm text-gray-800 dark:text-neutral-200">
-                  <svg class="shrink-0 size-4 me-1" width="164" height="143" viewBox="0 0 164 143" fill="none">
-                    <path d="M81.1349 139.508L2.87045 4.50153C2.48398 3.83487 2.96501 3 3.73559 3H62.4308C62.7837 3 63.1104 3.18601 63.2906 3.48946L81.1286 33.5324C81.5188 34.1895 82.4718 34.1839 82.8542 33.5224L100.211 3.4995C100.39 3.19038 100.72 3 101.077 3H160.264C161.035 3 161.516 3.83487 161.13 4.50154L82.8651 139.508C82.4799 140.172 81.5201 140.172 81.1349 139.508Z" stroke="currentColor" stroke-width="5" stroke-linecap="round" />
-                    <path d="M81.1292 86.9894L33.8644 4.99943C33.4801 4.33276 33.9612 3.5 34.7307 3.5H62.9276C63.2822 3.5 63.6103 3.6878 63.7899 3.99358L81.1259 33.5116C81.515 34.1742 82.4751 34.1685 82.8564 33.5013L99.7121 4.00386C99.8901 3.69229 100.221 3.5 100.58 3.5H128.778C129.546 3.5 130.027 4.32894 129.647 4.99559L82.8641 86.9856C82.4813 87.6564 81.5149 87.6586 81.1292 86.9894Z" fill="currentColor" />
-                  </svg>
-                  Vue
-                </li>
-                <li class="me-1 after:content-[','] inline-flex items-center text-sm text-gray-800 dark:text-neutral-200">
-                  <svg class="shrink-0 size-4 me-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="currentColor" fill="none">
-                      <path d="M2.5 12C2.5 7.52166 2.5 5.28249 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28249 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4783 2.5 12Z" stroke="currentColor" stroke-width="1.5" />
-                      <path d="M5 12V10C5 9.72386 5.22386 9.5 5.5 9.5H6.75C7.44036 9.5 8 10.0596 8 10.75C8 11.4404 7.44036 12 6.75 12H5ZM5 12V14.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                      <path d="M16 12V10C16 9.72386 16.2239 9.5 16.5 9.5H17.75C18.4404 9.5 19 10.0596 19 10.75C19 11.4404 18.4404 12 17.75 12H16ZM16 12V14.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                      <path d="M10.5 9.5V12M10.5 14.5V12M13.5 9.5V12M13.5 14.5V12M10.5 12H13.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                  PHP
-                </li>
-                <li class="me-1 after:content-[','] inline-flex items-center text-sm text-gray-800 dark:text-neutral-200">
-                  <svg class="shrink-0 size-4 me-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="currentColor" fill="none">
-                    <ellipse cx="12" cy="5" rx="8" ry="3" stroke="currentColor" stroke-width="1.5" />
-                    <path d="M20 12C20 13.6569 16.4183 15 12 15C7.58172 15 4 13.6569 4 12" stroke="currentColor" stroke-width="1.5" />
-                    <path d="M20 5V19C20 20.6569 16.4183 22 12 22C7.58172 22 4 20.6569 4 19V5" stroke="currentColor" stroke-width="1.5" />
-                    <path d="M8 8V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
-                    <path d="M8 15V17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
-                </svg>
-                  MySQL
-                </li>
-              </ul>
-            </dd>
-          </dl>
-
-          <dl class="flex flex-col sm:flex-row gap-1">
-            <dt class="min-w-40">
-              <span class="block text-sm text-gray-500 dark:text-neutral-500">CMS:</span>
-            </dt>
-            <dd>
-              <ul>
-                <li class="me-1 after:content-[','] inline-flex items-center text-sm text-gray-800 dark:text-neutral-200">
-                  <svg class="shrink-0 size-4 me-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="currentColor" fill="none">
-                      <path d="M2 6H3M3 6L7.457 17.4921C8.10731 19.1689 8.43246 20.0073 8.9816 20C9.53074 19.9926 9.83482 19.1459 10.443 17.4524L10.5 17.2935M3 6H6.5M6.5 6H7.457M6.5 6L10.5 17.2935M10.5 17.2935L12.816 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                      <path d="M10 6H11M11 6L15.457 17.4921C16.1073 19.1689 16.4325 20.0073 16.9816 20C17.5307 19.9926 17.8348 19.1459 18.443 17.4524L18.5 17.2935M11 6H14.5M14.5 6H15.457M14.5 6L18.5 17.2935M18.5 17.2935L20.5288 11.644M20.5288 11.644L21.5377 9.23491C21.9415 8.12432 22.0835 6.93739 21.9529 5.76443C21.7963 4.35795 21.1576 3 19.5012 3C17.9632 3 17.2101 4.72272 18.1898 5.89363C19.7701 7.78249 21.1719 9.87537 20.5288 11.644Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                  </svg>
-                  WordPress
-                </li>
-                <li class="me-1 after:content-[','] inline-flex items-center text-sm text-gray-800 dark:text-neutral-200">
-                  <svg class="shrink-0 size-4 me-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="currentColor" fill="none">
-                    <path d="M16 23V4L4 7.5L3 20.5L16 23Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M17.5 5.14833L16 4V23L21 21.5C21 18.8371 20.7998 16.178 20.4012 13.5451L19.1298 5.14833H17.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M13.0016 4.87502C13.0092 2.85785 12.239 1.26304 11.0023 1.02911C9.44084 0.73373 7.72699 2.71982 7.17435 5.46517C7.09535 5.85761 7.04435 6.24433 7.01953 6.61979" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M14.8665 4.33083C14.5732 3.14854 13.9527 2.31296 13.1092 2.14837C11.7258 1.8784 10.2195 3.50662 9.55469 5.8801" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M12.7896 9.42437C11.7896 9.0035 9.19076 8.24627 8.50372 10.266C8.1332 11.3553 8.79795 12.5183 10.2171 13.6331C12.2041 15.1939 11.867 16.524 11.5033 17.0001C10.2176 18.6837 7.64621 17.7016 6.78906 17.0001" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-                  Shopify
-                </li>
-                <li class="me-1 after:content-[','] inline-flex items-center text-sm text-gray-800 dark:text-neutral-200">
-                  <svg class="shrink-0 size-4 me-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="currentColor" fill="none">
-                      <path d="M2.5 12.0001C2.5 7.52178 2.5 5.28261 3.89124 3.89136C5.28249 2.50012 7.52166 2.50012 12 2.50012C16.4783 2.50012 18.7175 2.50012 20.1088 3.89136C21.5 5.28261 21.5 7.52178 21.5 12.0001C21.5 16.4785 21.5 18.7176 20.1088 20.1089C18.7175 21.5001 16.4783 21.5001 12 21.5001C7.52166 21.5001 5.28249 21.5001 3.89124 20.1089C2.5 18.7176 2.5 16.4785 2.5 12.0001Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
-                      <path d="M7.5 9.00012L8.5 16.0001C10.5 14.8001 12 10.8335 12.5 9.00012L14 16.0001C16 14.4001 17.1667 10.6668 17.5 9.00012" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                  Webflow
-                </li>
-              </ul>
-            </dd>
-          </dl>
-
-          <dl class="flex flex-col sm:flex-row gap-1">
-            <dt class="min-w-40">
-              <span class="block text-sm text-gray-500 dark:text-neutral-500">Design Expertise:</span>
-            </dt>
-            <dd>
-              <ul>
-                <li class="me-1 after:content-[','] inline-flex items-center text-sm text-gray-800 dark:text-neutral-200">
-                  <svg class="shrink-0 size-4 me-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="currentColor" fill="none">
-                      <circle cx="15" cy="12" r="3" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
-                      <path d="M9 21C10.6569 21 12 19.6569 12 18V15H9C7.34315 15 6 16.3431 6 18C6 19.6569 7.34315 21 9 21Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
-                      <path d="M12 9V15H9C7.34315 15 6 13.6569 6 12C6 10.3431 7.34315 9 9 9H12Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                      <path d="M12 3V9H9C7.34315 9 6 7.65685 6 6C6 4.34315 7.34315 3 9 3H12Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                      <path d="M12 3V9H15C16.6569 9 18 7.65685 18 6C18 4.34315 16.6569 3 15 3H12Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                  Figma
-                </li>
-                <li class="me-1 after:content-[','] inline-flex items-center text-sm text-gray-800 dark:text-neutral-200">
-                  <svg class="shrink-0 size-4 me-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="currentColor" fill="none">
-                    <path d="M4 8C4 5.17157 4 3.75736 5.00421 2.87868C6.00841 2 7.62465 2 10.8571 2H13.1429C16.3753 2 17.9916 2 18.9958 2.87868C20 3.75736 20 5.17157 20 8V17H4V8Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
-                    <path d="M3 17H21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
-                    <path d="M10.6987 5.56588C11.9289 5.38957 13.9674 5.4601 12.2803 7.15266C10.1715 9.26836 7.00837 14.0289 10.6987 12.4421C14.3891 10.8554 15.9709 11.9132 14.3893 13.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M12 17V21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
-                    <path d="M5 22L8 17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
-                    <path d="M19 22L16 17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
-                </svg>
-                  Canva
-                </li>
-                <li class="me-1 after:content-[','] inline-flex items-center text-sm text-gray-800 dark:text-neutral-200">
-                  <svg class="shrink-0 size-4 me-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="currentColor" fill="none">
-                      <path d="M15.9999 13.5001V17.5001C15.9999 18.9143 15.9999 19.6214 16.4392 20.0608C16.8786 20.5001 17.5857 20.5001 18.9999 20.5001C20.4141 20.5001 21.1212 20.5001 21.5605 20.0608C21.9999 19.6214 21.9999 18.9143 21.9999 17.5001V13.5001C21.9999 12.0859 21.9999 11.3788 21.5605 10.9395C21.1212 10.5001 20.4141 10.5001 18.9999 10.5001C17.5857 10.5001 16.8786 10.5001 16.4392 10.9395C15.9999 11.3788 15.9999 12.0859 15.9999 13.5001Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                      <path d="M3.99988 16.5005V8.50049C3.99988 6.14347 3.99988 4.96495 4.73254 4.23272C5.46521 3.50049 6.64442 3.50049 9.00283 3.50049H16.007C18.3654 3.50049 19.5446 3.50049 20.2773 4.23272C20.8346 4.78969 20.9679 5.60486 20.9999 7.00049" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                      <path d="M12.9999 20.5005H2.51567C2.13273 20.5005 1.88367 20.1093 2.05493 19.7769L3.99988 16.5005H12.9999" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                  Responsive Design
-                </li>
-              </ul>
-            </dd>
-          </dl>
-
-          <dl class="flex flex-col sm:flex-row gap-1">
-            <dt class="min-w-40">
-              <span class="block text-sm text-gray-500 dark:text-neutral-500">Soft Skills:</span>
-            </dt>
-            <dd>
-              <ul>
-                <li class="me-1 after:content-[','] inline-flex items-center text-sm text-gray-800 dark:text-neutral-200">
-                  Strong communication
-                </li>
-                <li class="me-1 after:content-[','] inline-flex items-center text-sm text-gray-800 dark:text-neutral-200">
-                  Problem-solving
-                </li>
-                <li class="me-1 after:content-[','] inline-flex items-center text-sm text-gray-800 dark:text-neutral-200">
-                  Attention to detail
-                </li>
-                <li class="me-1 after:content-[','] inline-flex items-center text-sm text-gray-800 dark:text-neutral-200">
-                  Time management
-                </li>
-              </ul>
-            </dd>
-          </dl>
+        <div class="card icon">
+          <h3>Optimization & maintenance</h3>
+          <p>Speed audits, SEO improvements, and ongoing enhancements to keep your site in top form.</p>
         </div>
-        <!-- End List -->
       </div>
-      <!-- End Skills -->
+    </section>
 
-      <!-- Work Experience -->
-      <div class="mt-10 sm:mt-14" id="experience">
-        <h2 class="mb-5 font-medium text-gray-800 dark:text-neutral-200">
-          Work experience
-        </h2>
+    <section class="section" id="projects">
+      <div class="section-heading">
+        <h2>Selected projects</h2>
+        <p>A glimpse into recent work across business, eCommerce, and service brands.</p>
+      </div>
+      <div class="project-list">
+        <article class="project">
+          <img src="./assets/sbteng-portfolio-img.jpg" alt="SBT Engineering project preview">
+          <div>
+            <h3>WordPress business website</h3>
+            <p>
+              Engineering company website featuring structured services, lead generation funnels, and easy content
+              management for internal teams.
+            </p>
+            <div class="tags">
+              <span>WordPress</span>
+              <span>Elementor</span>
+              <span>Performance</span>
+            </div>
+            <a class="text-link" href="https://sbteng.com/" target="_blank" rel="noreferrer">View project</a>
+          </div>
+        </article>
+        <article class="project">
+          <img src="./assets/thedelicious-mockup.png" alt="The Delicious project preview">
+          <div>
+            <h3>Restaurant Shopify storefront</h3>
+            <p>
+              A vibrant Shopify build for a food brand with optimized menus, promotions, and responsive ordering.
+            </p>
+            <div class="tags">
+              <span>Shopify</span>
+              <span>UI Design</span>
+              <span>Conversion</span>
+            </div>
+            <a class="text-link" href="https://thedelicious.com/" target="_blank" rel="noreferrer">View project</a>
+          </div>
+        </article>
+        <article class="project">
+          <img src="./assets/project-3.jpg" alt="Creative agency portfolio preview">
+          <div>
+            <h3>Creative agency portfolio</h3>
+            <p>
+              A bold marketing site with custom motion details, case study structure, and conversion-focused layout.
+            </p>
+            <div class="tags">
+              <span>HTML/CSS</span>
+              <span>Landing pages</span>
+              <span>Branding</span>
+            </div>
+            <a class="text-link" href="https://www.behance.net/" target="_blank" rel="noreferrer">View project</a>
+          </div>
+        </article>
+      </div>
+    </section>
 
-        <!-- Timeline -->
+    <section class="section" id="experience">
+      <div class="section-heading">
+        <h2>Experience</h2>
+        <p>Highlights from the journey so far.</p>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div>
+            <h3>Senior WordPress Developer</h3>
+            <span>Freelance • 2020 — Present</span>
+          </div>
+          <p>Delivered responsive, conversion-led sites for agencies and direct clients across 8+ industries.</p>
+        </div>
+        <div class="timeline-item">
+          <div>
+            <h3>Shopify Theme Specialist</h3>
+            <span>Remote • 2018 — 2020</span>
+          </div>
+          <p>Built custom Shopify sections, optimized product pages, and increased store speed scores.</p>
+        </div>
+        <div class="timeline-item">
+          <div>
+            <h3>PHP Developer</h3>
+            <span>Agency • 2016 — 2018</span>
+          </div>
+          <p>Maintained bespoke WordPress integrations, plugins, and CMS workflows for enterprise clients.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="section-heading">
+        <h2>Let’s build something great</h2>
+        <p>Tell me about your project and I’ll respond within 24 hours.</p>
+      </div>
+      <div class="contact-card">
         <div>
-          <!-- Item -->
-          <div class="group relative flex gap-x-5">
-            <!-- Icon -->
-            <div class="relative group-last:after:hidden after:absolute after:top-8 after:bottom-2 after:start-3 after:w-px after:-translate-x-[0.5px] after:bg-gray-200 dark:after:bg-neutral-700">
-              <div class="relative z-10 size-6 flex justify-center items-center">
-                <svg class="shrink-0 size-6 text-gray-800 dark:text-neutral-200" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M12 12h.01" />
-                  <path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" />
-                  <path d="M22 13a18.15 18.15 0 0 1-20 0" />
-                  <rect width="20" height="14" x="2" y="6" rx="2" />
-                </svg>
-              </div>
-            </div>
-            <!-- End Icon -->
-
-            <!-- Right Content -->
-            <div class="grow pb-8 group-last:pb-0">
-              <h3 class="mb-1 text-xs text-gray-600 dark:text-neutral-400">
-                2025 - Present
-              </h3>
-
-              <p class="font-semibold text-sm text-gray-800 dark:text-neutral-200">
-                Web Designer &amp; Web Developer at SEO-Mark
-              </p>
-
-              <p class="mt-1 text-sm text-gray-600 dark:text-neutral-400">
-                At SEO-Mark, I create and customize WordPress websites focused on clean design, strong performance, and SEO-friendly structures. I work with premium themes, page builders, and custom code to deliver websites that support both design goals and marketing results.
-              </p>
-
-              <ul class="list-disc ms-6 mt-3 space-y-1.5">
-                <li class="ps-1 text-sm text-gray-600 dark:text-neutral-400">
-                  Design and customize WordPress websites using Elementor, WPBakery etc.
-                </li>
-                <li class="ps-1 text-sm text-gray-600 dark:text-neutral-400">
-                  Improve site structure and usability to support SEO and overall performance
-                </li>
-                <li class="ps-1 text-sm text-gray-600 dark:text-neutral-400">
-                  Optimize website speed, responsiveness, and user experience
-                </li>
-                <li class="ps-1 text-sm text-gray-600 dark:text-neutral-400">
-                  Provide ongoing updates, fixes, and client support for smooth site operations
-                </li>
-              </ul>
-            </div>
-            <!-- End Right Content -->
-          </div>
-          <!-- End Item -->
-
-          <!-- Item -->
-          <div class="group relative flex gap-x-5">
-            <!-- Icon -->
-            <div class="relative group-last:after:hidden after:absolute after:top-8 after:bottom-2 after:start-3 after:w-px after:-translate-x-[0.5px] after:bg-gray-200 dark:after:bg-neutral-700">
-              <div class="relative z-10 size-6 flex justify-center items-center">
-                <img class="shrink-0 size-6 text-gray-600 dark:text-neutral-400 rounded-full" src="./assets/ecom_zenius_logo.jpeg" alt="">
-              </div>
-            </div>
-            <!-- End Icon -->
-
-            <!-- Right Content -->
-            <div class="grow pb-8 group-last:pb-0">
-              <h3 class="mb-1 text-xs text-gray-600 dark:text-neutral-400">
-                2023 - 2025
-              </h3>
-
-              <p class="font-semibold text-sm text-gray-800 dark:text-neutral-200">
-                Web Developer at EcomZenius
-              </p>
-
-              <p class="mt-1 text-sm text-gray-600 dark:text-neutral-400">
-                  At EcomZenius, I build and customize professional eCommerce and business websites using WordPress and Shopify. My work includes customizing premium WordPress themes with Elementor and WPBakery, creating Shopify features with Liquid, and optimizing WordPress sites for speed and performance. I also provide clear documentation and ongoing client support to ensure smooth setup, functionality, and long-term site reliability.</p>
-
-              <div class="mt-3">
-                <!-- Card -->
-                <a class="block border border-gray-200 rounded-lg hover:shadow-2xs focus:outline-hidden dark:border-neutral-700" href="#">
-                  <div class="relative flex items-center overflow-hidden">
-                    <img class="w-32 sm:w-48 h-full absolute inset-0 object-cover rounded-s-lg" src="/assets/ecom_zenius_logo.jpeg" alt="Blog Image">
-
-                    <div class="grow p-4 ms-32 sm:ms-48">
-                      <div class="min-h-24 flex flex-col justify-center">
-                        <h3 class="font-semibold text-sm text-gray-800 dark:text-neutral-300">
-                          EcomZenius
-                        </h3>
-                        <p class="mt-1 text-sm text-gray-500 dark:text-neutral-500">
-                          Grow your eCommerce revenue fast with our proven, expert-led scaling framework.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-                <!-- End Card -->
-              </div>
-            </div>
-            <!-- End Right Content -->
-          </div>
-          <!-- End Item -->
-
-          <!-- Item -->
-          <div class="group relative flex gap-x-5">
-            <!-- Icon -->
-            <div class="relative group-last:after:hidden after:absolute after:top-8 after:bottom-2 after:start-3 after:w-px after:-translate-x-[0.5px] after:bg-gray-200 dark:after:bg-neutral-700">
-              <div class="relative z-10 size-6 flex justify-center items-center">
-                <svg class="shrink-0 size-6 text-gray-800 dark:text-neutral-200" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M12 12h.01" />
-                  <path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" />
-                  <path d="M22 13a18.15 18.15 0 0 1-20 0" />
-                  <rect width="20" height="14" x="2" y="6" rx="2" />
-                </svg>
-              </div>
-            </div>
-            <!-- End Icon -->
-
-            <!-- Right Content -->
-            <div class="grow pb-8 group-last:pb-0">
-              <h3 class="mb-1 text-xs text-gray-600 dark:text-neutral-400">
-                2021 - 2023
-              </h3>
-
-              <p class="font-semibold text-sm text-gray-800 dark:text-neutral-200">
-                WordPress/Shopify Developer at PrepDevs
-              </p>
-
-              <p class="mt-1 text-sm text-gray-600 dark:text-neutral-400">
-                As a WordPress and Shopify developer, I’ve worked with a wide range of clients to build, customize, and improve their websites based on their business needs. I specialize in customizing premium WordPress themes from ThemeForest using Elementor, WPBakery, and custom coding to create clean, responsive, and user-friendly layouts. On the Shopify side, I develop and modify themes using Liquid, creating custom sections, improving UI/UX, and ensuring smooth store functionality.
-                I maintain clear communication throughout each project and manage tasks efficiently using tools like Notion and GitHub, providing clients with reliable support and ongoing updates.</p>
-            </div>
-            <!-- End Right Content -->
-          </div>
-          <!-- End Item -->
-
-          <!-- Item -->
-          <div class="group relative flex gap-x-5">
-            <!-- Icon -->
-            <div class="relative group-last:after:hidden after:absolute after:top-8 after:bottom-2 after:start-3 after:w-px after:-translate-x-[0.5px] after:bg-gray-200 dark:after:bg-neutral-700">
-              <div class="relative z-10 size-6 flex justify-center items-center">
-                <img class="shrink-0 size-6 text-gray-600 dark:text-neutral-400 rounded-full" src="./assets/prep-digitals-icon.png" alt="">
-              </div>
-            </div>
-            <!-- End Icon -->
-
-            <!-- Right Content -->
-            <div class="grow pb-8 group-last:pb-0">
-              <h3 class="mb-1 text-xs text-gray-600 dark:text-neutral-400">
-                2020 - 2021
-              </h3>
-
-              <p class="font-semibold text-sm text-gray-800 dark:text-neutral-200">
-                Junior WordPress Developer at Prepdigitals
-              </p>
-
-              <ul class="list-disc ms-6 mt-3 space-y-1.5">
-                <li class="ps-1 text-sm text-gray-600 dark:text-neutral-400">
-                  Worked with a variety of clients, customizing and improving their WordPress websites based on their specific needs.
-                </li>
-                <li class="ps-1 text-sm text-gray-600 dark:text-neutral-400">
-                  Customized premium ThemeForest themes using builders like WPBakery and Elementor, ensuring responsive, clean, and user-friendly layouts.
-                </li>
-                <li class="ps-1 text-sm text-gray-600 dark:text-neutral-400">
-                  Maintained smooth communication with clients, handled revisions efficiently, and managed tasks using tools like Notion for project tracking and GitHub for version control when needed.
-                </li>
-              </ul>
-            </div>
-            <!-- End Right Content -->
-          </div>
-          <!-- End Item -->
+          <h3>Ready to start?</h3>
+          <p>Reach out by email or connect on social platforms below.</p>
         </div>
-        <!-- End Timeline -->
-      </div>
-      <!-- End Work Experience -->
-
-      <!-- Education -->
-      <div class="mt-10 sm:mt-14">
-        <h2 class="mb-3 font-medium text-gray-800 dark:text-neutral-200">
-          Education
-        </h2>
-
-        <!-- Grid -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-          <div class="p-4 border border-gray-200 rounded-lg dark:border-neutral-700">
-            <img class="shrink-0 size-10 mb-3" src="./assets/stack-learner.jpg" alt="stack-learner-logo">              
-            
-
-            <h3 class="mb-1 text-xs text-gray-600 dark:text-neutral-400">
-              2020 - 2021
-            </h3>
-
-            <p class="font-semibold text-sm text-gray-800 dark:text-neutral-200">
-              Mastering Web Design & JS - All you need to know
-            </p>
-
-            <a href="https://www.stacklearner.com/" class="mt-1 text-sm text-gray-600 dark:text-neutral-400">
-              Stack Learner
-            </a>
-          </div>
-
-          <div class="p-4 border border-gray-200 rounded-lg dark:border-neutral-700">
-            <img class="shrink-0 size-10 mb-3" src="./assets/nu-logo.png" alt="nu-logo">  
-
-            <h3 class="mb-1 text-xs text-gray-600 dark:text-neutral-400">
-              2017 - 2021
-            </h3>
-
-            <p class="font-semibold text-sm text-gray-800 dark:text-neutral-200">
-              Bachelor's degree in Computer Software Engineering
-            </p>
-
-            <p class="mt-1 text-sm text-gray-600 dark:text-neutral-400">
-              National University
-            </p>
+        <div class="contact-actions">
+          <a class="button" href="mailto:arparvez.dev@gmail.com">arparvez.dev@gmail.com</a>
+          <div class="social-links">
+            <a href="https://x.com/Arparvez1" target="_blank" rel="noreferrer">Twitter/X</a>
+            <a href="https://www.linkedin.com/in/arparvez/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="https://github.com/arparvezz" target="_blank" rel="noreferrer">GitHub</a>
           </div>
         </div>
-        <!-- End Grid -->
       </div>
-      <!-- End Education -->
-
-      <!-- Articles -->
-      <div class="my-10 sm:my-14">
-        <h2 class="mb-5 font-medium text-gray-800 dark:text-neutral-200">
-          Articles
-        </h2>
-
-        <!-- List -->
-        <ul class="space-y-10">
-          <!-- blog one -->
-          <li>
-            <p class="mb-2 text-sm text-gray-500 dark:text-neutral-500">
-              2025
-            </p>
-            <h5 class="font-medium text-sm text-gray-800 dark:text-neutral-200">
-              Why WordPress Should Be Your Go-To CMS
-            </h5>
-            <p class="mt-1 text-sm text-gray-500 dark:text-neutral-500">
-              WordPress is the most flexible and beginner-friendly CMS available today. It lets you build any type...
-            </p>
-            <p class="mt-1">
-              <a class="text-sm text-gray-500 underline hover:text-gray-800 hover:decoration-2 focus:outline-hidden focus:decoration-2 dark:text-neutral-500 dark:hover:text-neutral-400" href="javascript:void(0)"  aria-haspopup="dialog" aria-expanded="false" aria-controls="blog-one" data-hs-overlay="#blog-one">
-                Continue reading
-              </a>
-
-
-              <div id="blog-one" class="hs-overlay hidden size-full fixed top-0 start-0 z-80 overflow-x-hidden overflow-y-auto pointer-events-none" role="dialog" tabindex="-1" aria-labelledby="blog-one-label">
-                <div class="hs-overlay-animation-target hs-overlay-open:scale-100 hs-overlay-open:opacity-100 scale-95 opacity-0 ease-in-out transition-all duration-200 sm:max-w-lg sm:w-full m-3 sm:mx-auto min-h-[calc(100%-56px)] flex items-center">
-                  <div class="w-full flex flex-col bg-white border border-gray-200 shadow-2xs rounded-xl pointer-events-auto dark:bg-neutral-800 dark:border-neutral-700 dark:shadow-neutral-700/70">
-                    <div class="flex justify-between items-center py-3 px-4 border-b border-gray-200 dark:border-neutral-700">
-                      <h3 id="blog-one-label" class="font-bold text-gray-800 dark:text-white">
-                        Why WordPress Should Be Your Go-To CMS
-                      </h3>
-                      <button type="button" class="size-8 inline-flex justify-center items-center gap-x-2 rounded-full border border-transparent bg-gray-100 text-gray-800 hover:bg-gray-200 focus:outline-hidden focus:bg-gray-200 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-700 dark:hover:bg-neutral-600 dark:text-neutral-400 dark:focus:bg-neutral-600" aria-label="Close" data-hs-overlay="#blog-one">
-                        <span class="sr-only">Close</span>
-                        <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                          <path d="M18 6 6 18"></path>
-                          <path d="m6 6 12 12"></path>
-                        </svg>
-                      </button>
-                    </div>
-                    <div class="p-4 overflow-y-auto">
-                      <p class="mt-1 text-gray-800 dark:text-neutral-400">
-                        WordPress is the most flexible and beginner-friendly CMS available today. It lets you build any type of website — from blogs and portfolios to business sites and full eCommerce stores — without limitations. With thousands of themes and plugins, you can customize everything to match your brand and add features instantly. WordPress is also SEO-friendly, mobile-responsive, secure, and regularly updated, making it a reliable long-term choice. Whether you're a business owner or a developer, WordPress gives you complete control, scalability, and the freedom to grow your website however you want.
-                      </p>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </p>
-          </li>
-
-          <!-- blog Two -->
-          <li>
-            <p class="mb-2 text-sm text-gray-500 dark:text-neutral-500">
-              2025
-            </p>
-            <h5 class="font-medium text-sm text-gray-800 dark:text-neutral-200">
-              Top Tips for WordPress Speed Optimization: A Simple Guide to a Faster Website
-            </h5>
-            <p class="mt-1 text-sm text-gray-500 dark:text-neutral-500">
-              Website speed is one of the most important factors for user experience, SEO, and overall performance. A slow website loses visitors...
-            </p>
-            <p class="mt-1">
-              <a class="text-sm text-gray-500 underline hover:text-gray-800 hover:decoration-2 focus:outline-hidden focus:decoration-2 dark:text-neutral-500 dark:hover:text-neutral-400" href="javascript:void(0)"  aria-haspopup="dialog" aria-expanded="false" aria-controls="blog-two" data-hs-overlay="#blog-two">
-                Continue reading
-              </a>
-
-
-              <div id="blog-two" class="hs-overlay hidden size-full fixed top-0 start-0 z-80 overflow-x-hidden overflow-y-auto pointer-events-none" role="dialog" tabindex="-1" aria-labelledby="blog-two-label">
-                <div class="hs-overlay-animation-target hs-overlay-open:scale-100 hs-overlay-open:opacity-100 scale-95 opacity-0 ease-in-out transition-all duration-200 sm:max-w-lg sm:w-full m-3 sm:mx-auto min-h-[calc(100%-56px)] flex items-center">
-                  <div class="w-full flex flex-col bg-white border border-gray-200 shadow-2xs rounded-xl pointer-events-auto dark:bg-neutral-800 dark:border-neutral-700 dark:shadow-neutral-700/70">
-                    <div class="flex justify-between items-center py-3 px-4 border-b border-gray-200 dark:border-neutral-700">
-                      <h3 id="blog-two-label" class="font-bold text-gray-800 dark:text-white">
-                        Top Tips for WordPress Speed Optimization: A Simple Guide to a Faster Website
-                      </h3>
-                      <button type="button" class="size-8 inline-flex justify-center items-center gap-x-2 rounded-full border border-transparent bg-gray-100 text-gray-800 hover:bg-gray-200 focus:outline-hidden focus:bg-gray-200 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-700 dark:hover:bg-neutral-600 dark:text-neutral-400 dark:focus:bg-neutral-600" aria-label="Close" data-hs-overlay="#blog-two">
-                        <span class="sr-only">Close</span>
-                        <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                          <path d="M18 6 6 18"></path>
-                          <path d="m6 6 12 12"></path>
-                        </svg>
-                      </button>
-                    </div>
-                    <div class="p-4 overflow-y-auto">
-                      <p class="mt-1 text-gray-800 dark:text-neutral-400">
-                        Website speed is one of the most important factors for user experience, SEO, and overall performance. A slow website loses visitors, reduces conversions, and ranks lower on search engines. The good news? WordPress offers a lot of ways to improve speed without needing advanced technical knowledge.
-                        Here are some of the most effective WordPress speed optimization tips you can apply right away.
-                      </p>
-                      
-                      <div>
-                        <h4 class="text-gray-800 dark:text-neutral-400">✔️ 1. Choose Quality Hosting</h4>
-                        <p class="text-gray-800 dark:text-neutral-400">Fast hosting is the foundation of a fast website. Use reliable providers with LiteSpeed or NGINX servers and avoid cheap shared hosting.</p>
-                        <br>
-
-                        <h4 class="text-gray-800 dark:text-neutral-400">✔️ 2. Use a Lightweight Theme</h4>
-                        <p class="text-gray-800 dark:text-neutral-400">Pick performance-optimized themes that are clean, responsive, and not loaded with unnecessary features.</p>
-                        <br>
-
-                        <h4 class="text-gray-800 dark:text-neutral-400">✔️ 3. Install a Caching Plugin</h4>
-                        <p class="text-gray-800 dark:text-neutral-400">Caching reduces server load and speeds up pages instantly. Tools like LiteSpeed Cache, WP Rocket, or W3 Total Cache handle caching and compression automatically.</p>
-                        <br>
-
-                        <h4 class="text-gray-800 dark:text-neutral-400">✔️ 4. Optimize Images</h4>
-                        <p class="text-gray-800 dark:text-neutral-400">Compress images, use WebP format, and enable lazy loading to reduce file size and improve loading times.</p>
-                        <br>
-
-                        <h4 class="text-gray-800 dark:text-neutral-400">✔️ 5. Minify CSS, JS & HTML</h4>
-                        <p class="text-gray-800 dark:text-neutral-400">Minify and combine files to reduce page weight. Most caching plugins offer these optimization features.</p>
-                        <br>
-
-                        <h4 class="text-gray-800 dark:text-neutral-400">✔️ 6. Use a CDN</h4>
-                        <p class="text-gray-800 dark:text-neutral-400">A CDN delivers content from servers closest to the visitor, improving global load times. Popular options include Cloudflare and BunnyCDN.</p>
-                        <br>
-
-                        <h4 class="text-gray-800 dark:text-neutral-400">✔️ 7. Clean Your Database</h4>
-                        <p class="text-gray-800 dark:text-neutral-400">Remove old revisions, spam, and temporary data. Plugins like WP-Optimize help keep your database light and efficient.</p>
-                        <br>
-
-                        <h4 class="text-gray-800 dark:text-neutral-400">✔️ 8. Limit Unnecessary Plugins</h4>
-                        <p class="text-gray-800 dark:text-neutral-400">Fewer plugins mean faster performance. Remove unused plugins and avoid heavy all-in-one solutions.</p>
-                        <br>
-
-                        <h4 class="text-gray-800 dark:text-neutral-400">✔️ 9. Enable GZIP/Brotli Compression</h4>
-                        <p class="text-gray-800 dark:text-neutral-400">Compression makes your files smaller and loads pages faster. Most hosting and caching plugins support this.</p>
-                        <br>
-
-                        <h4 class="text-gray-800 dark:text-neutral-400">✔️ 10. Keep WordPress Updated</h4>
-                        <p class="text-gray-800 dark:text-neutral-400">Regularly update WordPress core, themes, and plugins to ensure better performance, stability, and security.</p>
-
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </p>
-          </li>
-        </ul>
-        <!-- End List -->
-      </div>
-      <!-- End Articles -->
-
-      <!-- Subscribe -->
-      <!-- <div class="my-10 sm:my-14">
-        <h2 class="mb-5 font-medium text-gray-800 dark:text-neutral-200">
-          Subscribe
-        </h2> -->
-
-        <!-- Input -->
-        <!-- <form>
-          <div class="p-1.5 flex flex-col sm:flex-row items-center gap-2 border border-gray-200 rounded-lg dark:border-neutral-700">
-            <div class="relative w-full">
-              <label for="hero-input" class="sr-only">Subscribe</label>
-              <div class="absolute inset-y-0 start-0 flex items-center pointer-events-none z-20 ps-3">
-                <svg class="shrink-0 size-4 text-gray-400 dark:text-neutral-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <rect width="20" height="16" x="2" y="4" rx="2" />
-                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-                </svg>
-              </div>
-              <input type="text" id="hero-input" name="hero-input" class="py-1.5 sm:py-2 ps-9 pe-3 block w-full border-transparent rounded-lg sm:text-sm focus:border-transparent focus:ring-transparent disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:text-neutral-400 dark:placeholder-neutral-500" placeholder="Enter your email">
-            </div>
-            <a class="w-full sm:w-auto whitespace-nowrap py-2 px-2.5 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-md border border-transparent bg-gray-800 text-white hover:bg-gray-900 focus:outline-hidden focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:bg-white dark:text-neutral-800 dark:hover:bg-neutral-200" href="#">
-              Join
-              <svg class="shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M5 12h14" />
-                <path d="m12 5 7 7-7 7" />
-              </svg>
-            </a>
-          </div>
-          <p class="mt-2 text-xs text-gray-500 dark:text-neutral-500">
-            No spam, unsubscribe at any time.
-          </p>
-        </form> -->
-        <!-- End Input -->
-      <!-- </div> -->
-      <!-- End Subscribe -->
-    </div>
+    </section>
   </main>
-  <!-- ========== END MAIN CONTENT ========== -->
 
-  <!-- ========== FOOTER ========== -->
-  <footer class="w-full max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="py-6 border-t border-gray-200 dark:border-neutral-700">
-      <div class="flex flex-wrap justify-between items-center gap-2">
-        <div>
-          <p class="text-xs text-gray-600 dark:text-neutral-400">
-            © 2025 Ar Parvez.
-          </p>
-        </div>
-        <!-- End Col -->
-
-        <!-- List -->
-        <ul class="flex flex-wrap items-center">
-          <li class="inline-block relative pe-4 text-xs last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-1.5 before:-translate-y-1/2 before:size-[3px] before:rounded-full before:bg-gray-400 dark:text-neutral-500 dark:before:bg-neutral-600">
-            <a class="text-xs text-gray-500 underline hover:text-gray-800 hover:decoration-2 focus:outline-hidden focus:decoration-2 dark:text-neutral-500 dark:hover:text-neutral-400" href="https://x.com/Arparvez1">
-              X (Twitter)
-            </a>
-          </li>
-          <li class="inline-block relative pe-4 text-xs last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-1.5 before:-translate-y-1/2 before:size-[3px] before:rounded-full before:bg-gray-400 dark:text-neutral-500 dark:before:bg-neutral-600">
-            <a class="text-xs text-gray-500 underline hover:text-gray-800 hover:decoration-2 focus:outline-hidden focus:decoration-2 dark:text-neutral-500 dark:hover:text-neutral-400" href="https://www.linkedin.com/in/arparvez/">
-              Linkedin
-            </a>
-          </li>
-          <li class="inline-block pe-4 text-xs">
-            <a class="text-xs text-gray-500 underline hover:text-gray-800 hover:decoration-2 focus:outline-hidden focus:decoration-2 dark:text-neutral-500 dark:hover:text-neutral-400" href="https://github.com/arparvezz">
-              Github
-            </a>
-          </li>
-          <li class="inline-block">
-            <!-- Dark Mode -->
-            <button type="button" class="hs-dark-mode hs-dark-mode-active:hidden relative flex justify-center items-center size-7 border border-gray-200 text-gray-500 rounded-full hover:bg-gray-200 focus:outline-hidden focus:bg-gray-200 dark:border-neutral-700 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700" data-hs-theme-click-value="dark">
-              <span class="sr-only">Dark</span>
-              <svg class="shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
-              </svg>
-            </button>
-            <button type="button" class="hs-dark-mode hs-dark-mode-active:flex hidden relative flex justify-center items-center size-7 border border-gray-200 text-gray-500 rounded-full hover:bg-gray-200 focus:outline-hidden focus:bg-gray-200 dark:border-neutral-700 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700" data-hs-theme-click-value="light">
-              <span class="sr-only">Light</span>
-              <svg class="shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="4"></circle>
-                <path d="M12 2v2"></path>
-                <path d="M12 20v2"></path>
-                <path d="m4.93 4.93 1.41 1.41"></path>
-                <path d="m17.66 17.66 1.41 1.41"></path>
-                <path d="M2 12h2"></path>
-                <path d="M20 12h2"></path>
-                <path d="m6.34 17.66-1.41 1.41"></path>
-                <path d="m19.07 4.93-1.41 1.41"></path>
-              </svg>
-            </button>
-            <!-- End Dark Mode -->
-          </li>
-        </ul>
-        <!-- End List -->
-      </div>
-    </div>
+  <footer class="footer">
+    <p>© 2024 Ar Parvez. Crafted with focus and vanilla HTML, CSS, and JS.</p>
   </footer>
-  <!-- ========== END FOOTER ========== -->
 
-  <!-- JS Implementing Plugins -->
-
-  <!-- JS PLUGINS -->
-  <!-- Required plugins -->
-  <script src="./lib.js"></script>
   <script src="./script.js"></script>
-
-  <!-- JS THIRD PARTY PLUGINS -->
-  <!-- Google Analytics. Global site tag (gtag.js) -->
-  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-B73TDMXKF5"></script> -->
-   <script type="module"> import preline from 'https://cdn.jsdelivr.net/npm/preline@3.2.3/+esm' </script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-  
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-  
-    gtag('js', new Date());
-    gtag('config', 'G-B73TDMXKF5');
-  </script>
 </body>
 </html>
