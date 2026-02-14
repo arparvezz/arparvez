@@ -1,243 +1,411 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Portfolio of Ar Parvez, WordPress & Shopify developer building fast, scalable web experiences.">
-  <title>Ar Parvez | Web Developer</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ar Parvez — WordPress & Shopify Developer | Speed Optimization Expert</title>
+  <meta name="description" content="Portfolio of Ar Parvez, WordPress & Shopify developer building fast, scalable web experiences. 40+ sites delivered.">
   <link rel="shortcut icon" href="./assets/favicon.png">
+  <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="site-header" id="top">
-    <nav class="nav">
-      <a class="logo" href="#top">
-        <img src="./assets/Ar parvez logo (1).png" alt="Ar Parvez logo">
+
+  <!-- Loader -->
+  <div id="loader" class="loader">
+    <div class="loader-bar"></div>
+  </div>
+
+  <!-- Navigation -->
+  <header id="navbar" class="navbar">
+    <nav class="nav-container">
+      <a href="#hero" class="logo">
+        <img src="./assets/ar-parvez-logo.png" alt="Ar Parvez logo" style="height: 32px; width: auto;">
       </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
-      <div class="nav-links" id="nav-links">
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
-        <a class="button ghost" href="#contact">Contact</a>
-      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about"><span class="nav-number">01.</span> About</a></li>
+        <li><a href="#services"><span class="nav-number">02.</span> Services</a></li>
+        <li><a href="#projects"><span class="nav-number">03.</span> Projects</a></li>
+        <li><a href="#contact"><span class="nav-number">04.</span> Contact</a></li>
+        <li><a href="mailto:arparvez.dev@gmail.com" class="nav-cta">Say Hello</a></li>
+      </ul>
     </nav>
   </header>
 
+  <!-- Side Elements -->
+  <div class="side-element side-left">
+    <ul class="side-social">
+      <li><a href="https://github.com/arparvezz" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+      </a></li>
+      <li><a href="https://www.linkedin.com/in/arparvez/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+      </a></li>
+      <li><a href="https://x.com/Arparvez1" target="_blank" rel="noopener noreferrer" aria-label="Twitter/X">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+      </a></li>
+      <!-- TODO: Replace with your WhatsApp number -->
+      <li><a href="https://wa.me/8801876857950" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      </a></li>
+    </ul>
+    <div class="side-line"></div>
+  </div>
+
+  <div class="side-element side-right">
+    <a href="mailto:arparvez.dev@gmail.com" class="side-email">arparvez.dev@gmail.com</a>
+    <div class="side-line"></div>
+  </div>
+
+  <!-- Main Content -->
   <main>
-    <section class="hero">
-      <div class="hero-content">
-        <p class="eyebrow">WordPress • Shopify • PHP</p>
-        <h1>Hi, I’m Ar Parvez — I design and build conversion-focused web experiences.</h1>
-        <p class="lead">
-          I craft custom WordPress and Shopify sites with fast performance, clean code, and thoughtful UX.
-          From landing pages to full eCommerce builds, I translate business goals into measurable results.
+
+    <!-- Hero Section -->
+    <section id="hero" class="section hero">
+      <div class="container">
+        <p class="hero-greeting fade-up">Hi, my name is</p>
+        <h1 class="hero-name fade-up">Ar Parvez.</h1>
+        <h2 class="hero-tagline fade-up">I design and build conversion-focused web experiences.</h2>
+        <p class="hero-description fade-up">
+          I craft custom WordPress and Shopify sites with fast performance, clean code,
+          and thoughtful UX. From landing pages to full eCommerce builds, I translate
+          business goals into measurable results — with <strong>40+ sites</strong>
+          delivered over <strong>6+ years</strong>.
         </p>
-        <div class="hero-actions">
-          <a class="button" href="mailto:arparvez.dev@gmail.com">Let’s work together</a>
-          <a class="button ghost" href="#projects">View projects</a>
-        </div>
-        <div class="hero-stats">
-          <div>
-            <strong>6+ years</strong>
-            <span>web development</span>
-          </div>
-          <div>
-            <strong>40+ sites</strong>
-            <span>delivered worldwide</span>
-          </div>
-          <div>
-            <strong>Remote</strong>
-            <span>available for hire</span>
-          </div>
+        <div class="hero-cta fade-up">
+          <a href="#projects" class="btn btn-outline">View my projects</a>
         </div>
       </div>
-      <div class="hero-card">
-        <img class="profile" src="./assets/Ar parvez.jpg" alt="Portrait of Ar Parvez">
-        <div class="hero-card-content">
-          <h2>Delivering sites that feel premium and perform fast.</h2>
-          <p>Focused on responsive layouts, SEO-ready structure, and reusable components for long-term scale.</p>
-          <div class="chip-row">
-            <span>WordPress</span>
-            <span>Shopify</span>
-            <span>PHP</span>
-            <span>Elementor</span>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+      <div class="container">
+        <h2 class="section-heading fade-up">
+          <span class="section-number">01.</span> About Me
+        </h2>
+        <div class="about-content">
+          <div class="about-text fade-up">
+            <p>
+              I work closely with founders and marketing teams to align technical decisions
+              with business outcomes. Expect clear communication, transparent timelines,
+              and clean documentation.
+            </p>
+            <p>
+              Every build is optimized for speed, accessibility, and conversions. I bring
+              UI precision and backend reliability to every project I ship. With
+              <strong>6+ years</strong> of experience and <strong>40+ sites</strong>
+              delivered worldwide, I specialize in responsive layouts, SEO-ready structure,
+              and reusable components for long-term scale.
+            </p>
+            <p>Here are the technologies I work with:</p>
+            <ul class="skills-list">
+              <li>WordPress</li>
+              <li>PHP & MySQL</li>
+              <li>Elementor</li>
+              <li>WooCommerce</li>
+              <li>Shopify</li>
+              <li>HTML & CSS</li>
+              <li>JavaScript</li>
+              <li>cPanel / Server Management</li>
+              <li>Cloudflare / CDN</li>
+              <li>Site Speed Optimization</li>
+              <li>Malware Removal</li>
+              <li>SEO Optimization</li>
+            </ul>
+          </div>
+          <div class="about-image fade-up">
+            <div class="image-wrapper">
+              <div class="image-placeholder">
+                <img src="./assets/ar parvez.jpg" alt="Portrait of Ar Parvez" style="width: 100%; height: 100%; object-fit: cover; border-radius: 4px;">
+              </div>
+              <div class="image-border"></div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="about">
-      <div class="section-heading">
-        <h2>About me</h2>
-        <p>Developer, problem solver, and collaborative partner for modern brands.</p>
-      </div>
-      <div class="grid two">
-        <div class="card">
-          <h3>Client-first collaboration</h3>
-          <p>
-            I work closely with founders and marketing teams to align technical decisions with business outcomes.
-            Expect clear communication, transparent timelines, and clean documentation.
-          </p>
+    <!-- Services Section -->
+    <section id="services" class="section services">
+      <div class="container">
+        <h2 class="section-heading fade-up">
+          <span class="section-number">02.</span> What I Do
+        </h2>
+        <div class="services-grid">
+
+          <div class="service-card fade-up">
+            <div class="service-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <h3>Custom WordPress Builds</h3>
+            <p>
+              Theme development, Elementor builds, and flexible CMS workflows
+              built for non-technical teams. From blogs to business sites — tailored
+              to your exact needs with clean, maintainable code.
+            </p>
+          </div>
+
+          <div class="service-card fade-up">
+            <div class="service-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+            </div>
+            <h3>Shopify Store Design</h3>
+            <p>
+              Product-focused storefronts, optimized checkout flows, and
+              high-performing landing pages. I build Shopify stores that convert
+              visitors into customers.
+            </p>
+          </div>
+
+          <div class="service-card fade-up">
+            <div class="service-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            </div>
+            <h3>Optimization & Maintenance</h3>
+            <p>
+              Speed audits, SEO improvements, and ongoing enhancements to keep
+              your site in top form. I optimize for lightning-fast Core Web Vitals
+              scores and search rankings.
+            </p>
+          </div>
+
+          <div class="service-card fade-up">
+            <div class="service-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3>Malware Removal</h3>
+            <p>
+              Website hacked? I provide complete malware cleanup, backdoor removal,
+              and security hardening. I'll restore your site, patch vulnerabilities,
+              and set up monitoring to prevent future infections.
+            </p>
+          </div>
+
         </div>
-        <div class="card">
-          <h3>Performance and polish</h3>
-          <p>
-            Every build is optimized for speed, accessibility, and conversions. I bring UI precision and backend
-            reliability to every project I ship.
-          </p>
-        </div>
       </div>
-      <div class="highlight">
-        <p>
-          “Ar Parvez quickly understood our goals and delivered a polished site with an intuitive CMS. The launch
-          was smooth and our team now feels confident updating the content.”
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+      <div class="container">
+        <h2 class="section-heading fade-up">
+          <span class="section-number">03.</span> Some Things I've Built
+        </h2>
+
+        <!-- Featured Projects -->
+        <div class="projects-featured">
+
+          <article class="project-featured fade-up">
+            <div class="project-content">
+              <p class="project-overline">Featured Project</p>
+              <h3 class="project-title"><a href="https://sbteng.com/" target="_blank" rel="noopener noreferrer">SBT Engineering</a></h3>
+              <div class="project-description">
+                <p>Engineering company website featuring structured services, lead generation
+                  funnels, and easy content management for internal teams.</p>
+              </div>
+              <ul class="project-tech">
+                <li>WordPress</li>
+                <li>Elementor</li>
+                <li>Performance</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://sbteng.com/" target="_blank" rel="noopener noreferrer" aria-label="External Link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+              </div>
+            </div>
+            <div class="project-image">
+              <a href="https://sbteng.com/" target="_blank" rel="noopener noreferrer">
+                <div class="project-image-placeholder">
+                  <img src="./assets/sbteng-project-thumb.jpg" alt="SBT Engineering project preview" style="width: 100%; height: 100%; object-fit: cover; border-radius: 4px;">
+                </div>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-featured fade-up">
+            <div class="project-content">
+              <p class="project-overline">Featured Project</p>
+              <h3 class="project-title"><a href="https://thedelicious.com/" target="_blank" rel="noopener noreferrer">The Delicious</a></h3>
+              <div class="project-description">
+                <p>A vibrant Shopify build for a food brand with optimized menus,
+                  promotions, and responsive ordering.</p>
+              </div>
+              <ul class="project-tech">
+                <li>Shopify</li>
+                <li>UI Design</li>
+                <li>Conversion</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://thedelicious.com/" target="_blank" rel="noopener noreferrer" aria-label="External Link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+              </div>
+            </div>
+            <div class="project-image">
+              <a href="https://thedelicious.com/" target="_blank" rel="noopener noreferrer">
+                <div class="project-image-placeholder">
+                  <img src="./assets/auge4-project-thumb.jpg" alt="The Delicious project preview" style="width: 100%; height: 100%; object-fit: cover; border-radius: 4px;">
+                </div>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-featured fade-up">
+            <div class="project-content">
+              <p class="project-overline">ured FeatProject</p>
+              <h3 class="project-title"><a href="https://www.behance.net/" target="_blank" rel="noopener noreferrer">Fashion Ecommerce Website</a></h3>
+              <div class="project-description">
+                <p>A bold marketing site with custom motion details, case study structure,
+                  and conversion-focused layout.</p>
+              </div>
+              <ul class="project-tech">
+                <li>HTML/CSS</li>
+                <li>Landing Pages</li>
+                <li>Branding</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://www.behance.net/" target="_blank" rel="noopener noreferrer" aria-label="External Link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+              </div>
+            </div>
+            <div class="project-image">
+              <a href="https://www.behance.net/" target="_blank" rel="noopener noreferrer">
+                <div class="project-image-placeholder">
+                  <img src="./assets/jannat-fashion-project-thumb.jpg" alt="Creative agency portfolio preview" style="width: 100%; height: 100%; object-fit: cover; border-radius: 4px;">
+                </div>
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Other Projects Grid -->
+        <div class="projects-other">
+          <h3 class="projects-other-title fade-up">Other Noteworthy Projects</h3>
+          <div class="projects-grid">
+
+            <!-- TODO: Fill project 4 — replace title, description, tech, and link -->
+            <article class="project-card fade-up">
+              <div class="project-card-inner">
+                <div class="project-card-top">
+                  <div class="project-card-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+                  </div>
+                  <div class="project-card-links">
+                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="External Link">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    </a>
+                  </div>
+                </div>
+                <h3 class="project-card-title"><a href="#" target="_blank" rel="noopener noreferrer">Project Title</a></h3>
+                <p class="project-card-desc">Project description goes here.</p>
+                <ul class="project-card-tech">
+                  <li>Tech 1</li>
+                  <li>Tech 2</li>
+                  <li>Tech 3</li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- TODO: Fill project 5 — replace title, description, tech, and link -->
+            <article class="project-card fade-up">
+              <div class="project-card-inner">
+                <div class="project-card-top">
+                  <div class="project-card-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+                  </div>
+                  <div class="project-card-links">
+                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="External Link">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    </a>
+                  </div>
+                </div>
+                <h3 class="project-card-title"><a href="#" target="_blank" rel="noopener noreferrer">Project Title</a></h3>
+                <p class="project-card-desc">Project description goes here.</p>
+                <ul class="project-card-tech">
+                  <li>Tech 1</li>
+                  <li>Tech 2</li>
+                  <li>Tech 3</li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- TODO: Fill project 6 — replace title, description, tech, and link -->
+            <article class="project-card fade-up">
+              <div class="project-card-inner">
+                <div class="project-card-top">
+                  <div class="project-card-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+                  </div>
+                  <div class="project-card-links">
+                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="External Link">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    </a>
+                  </div>
+                </div>
+                <h3 class="project-card-title"><a href="#" target="_blank" rel="noopener noreferrer">Project Title</a></h3>
+                <p class="project-card-desc">Project description goes here.</p>
+                <ul class="project-card-tech">
+                  <li>Tech 1</li>
+                  <li>Tech 2</li>
+                  <li>Tech 3</li>
+                </ul>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <p class="section-number fade-up">04. What's Next?</p>
+        <h2 class="contact-title fade-up">Let's Build Something Great</h2>
+        <p class="contact-description fade-up">
+          Tell me about your project and I'll respond within 24 hours.
+          Whether you need a new WordPress website, a Shopify store, speed optimization,
+          or help with malware removal — I'm ready to help.
         </p>
-        <span>— Recent client feedback</span>
-      </div>
-    </section>
-
-    <section class="section" id="services">
-      <div class="section-heading">
-        <h2>What I do</h2>
-        <p>End-to-end web development with a focus on growth, maintainability, and conversions.</p>
-      </div>
-      <div class="grid three">
-        <div class="card icon">
-          <h3>Custom WordPress builds</h3>
-          <p>Theme development, Elementor builds, and flexible CMS workflows built for non-technical teams.</p>
-        </div>
-        <div class="card icon">
-          <h3>Shopify store design</h3>
-          <p>Product-focused storefronts, optimized checkout flows, and high-performing landing pages.</p>
-        </div>
-        <div class="card icon">
-          <h3>Optimization & maintenance</h3>
-          <p>Speed audits, SEO improvements, and ongoing enhancements to keep your site in top form.</p>
+        <div class="contact-buttons fade-up">
+          <a href="mailto:arparvez.dev@gmail.com" class="btn btn-outline btn-lg">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Send Email
+          </a>
+          <!-- TODO: Replace with your WhatsApp number -->
+          <a href="https://wa.me/8801876857950" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-lg">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp
+          </a>
+          <a href="https://www.linkedin.com/in/arparvez/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-lg">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn
+          </a>
         </div>
       </div>
     </section>
 
-    <section class="section" id="projects">
-      <div class="section-heading">
-        <h2>Selected projects</h2>
-        <p>A glimpse into recent work across business, eCommerce, and service brands.</p>
-      </div>
-      <div class="project-list">
-        <article class="project">
-          <img src="./assets/sbteng-portfolio-img.jpg" alt="SBT Engineering project preview">
-          <div>
-            <h3>WordPress business website</h3>
-            <p>
-              Engineering company website featuring structured services, lead generation funnels, and easy content
-              management for internal teams.
-            </p>
-            <div class="tags">
-              <span>WordPress</span>
-              <span>Elementor</span>
-              <span>Performance</span>
-            </div>
-            <a class="text-link" href="https://sbteng.com/" target="_blank" rel="noreferrer">View project</a>
-          </div>
-        </article>
-        <article class="project">
-          <img src="./assets/thedelicious-mockup.png" alt="The Delicious project preview">
-          <div>
-            <h3>Restaurant Shopify storefront</h3>
-            <p>
-              A vibrant Shopify build for a food brand with optimized menus, promotions, and responsive ordering.
-            </p>
-            <div class="tags">
-              <span>Shopify</span>
-              <span>UI Design</span>
-              <span>Conversion</span>
-            </div>
-            <a class="text-link" href="https://thedelicious.com/" target="_blank" rel="noreferrer">View project</a>
-          </div>
-        </article>
-        <article class="project">
-          <img src="./assets/project-3.jpg" alt="Creative agency portfolio preview">
-          <div>
-            <h3>Creative agency portfolio</h3>
-            <p>
-              A bold marketing site with custom motion details, case study structure, and conversion-focused layout.
-            </p>
-            <div class="tags">
-              <span>HTML/CSS</span>
-              <span>Landing pages</span>
-              <span>Branding</span>
-            </div>
-            <a class="text-link" href="https://www.behance.net/" target="_blank" rel="noreferrer">View project</a>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="section" id="experience">
-      <div class="section-heading">
-        <h2>Experience</h2>
-        <p>Highlights from the journey so far.</p>
-      </div>
-      <div class="timeline">
-        <div class="timeline-item">
-          <div>
-            <h3>Senior WordPress Developer</h3>
-            <span>Freelance • 2020 — Present</span>
-          </div>
-          <p>Delivered responsive, conversion-led sites for agencies and direct clients across 8+ industries.</p>
-        </div>
-        <div class="timeline-item">
-          <div>
-            <h3>Shopify Theme Specialist</h3>
-            <span>Remote • 2018 — 2020</span>
-          </div>
-          <p>Built custom Shopify sections, optimized product pages, and increased store speed scores.</p>
-        </div>
-        <div class="timeline-item">
-          <div>
-            <h3>PHP Developer</h3>
-            <span>Agency • 2016 — 2018</span>
-          </div>
-          <p>Maintained bespoke WordPress integrations, plugins, and CMS workflows for enterprise clients.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section contact" id="contact">
-      <div class="section-heading">
-        <h2>Let’s build something great</h2>
-        <p>Tell me about your project and I’ll respond within 24 hours.</p>
-      </div>
-      <div class="contact-card">
-        <div>
-          <h3>Ready to start?</h3>
-          <p>Reach out by email or connect on social platforms below.</p>
-        </div>
-        <div class="contact-actions">
-          <a class="button" href="mailto:arparvez.dev@gmail.com">arparvez.dev@gmail.com</a>
-          <div class="social-links">
-            <a href="https://x.com/Arparvez1" target="_blank" rel="noreferrer">Twitter/X</a>
-            <a href="https://www.linkedin.com/in/arparvez/" target="_blank" rel="noreferrer">LinkedIn</a>
-            <a href="https://github.com/arparvezz" target="_blank" rel="noreferrer">GitHub</a>
-          </div>
-        </div>
-      </div>
-    </section>
   </main>
 
+  <!-- Footer -->
   <footer class="footer">
-    <p>© 2024 Ar Parvez. Crafted with focus and vanilla HTML, CSS, and JS.</p>
+    <div class="container">
+      <p>Crafted by <a href="#">Ar Parvez</a> with focus and ❤️.</p>
+    </div>
   </footer>
 
-  <script src="./script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
