@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://arparvez.vercel.app/sitemap.xml
