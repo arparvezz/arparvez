@@ -3,90 +3,211 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Ar Parvez — WordPress & Shopify Developer | Speed Optimization Expert
-    </title>
-    <title>Ar Parvez – WordPress, PHP & Shopify Developer Portfolio</title>
-
+    <title>Ar Parvez — WordPress & Shopify Developer + SEO Expert</title>
     <meta
       name="description"
-      content="Portfolio of Ar Parvez, WordPress, Webflow & Shopify developer building fast, scalable web experiences. 40+ sites delivered."
+      content="Ar Parvez is a WordPress, Shopify & Webflow developer and SEO expert. 40+ fast, SEO-ready websites, 5+ custom WordPress plugins, speed optimization and malware removal."
     />
-    <meta name="robots" content="index, follow" />
+    <meta
+      name="keywords"
+      content="WordPress developer, Shopify developer, SEO expert, technical SEO, Shopify SEO, WordPress plugin development, website speed optimization, WordPress malware removal, Webflow developer, WooCommerce developer"
+    />
+    <meta name="author" content="Ar Parvez" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="theme-color" content="#08090a" />
     <link rel="canonical" href="https://arparvez.vercel.app/" />
-    <meta property="og:image" content="./assets/Ar parvez-og-image.jpg" />
-    <meta property="og:title" content="Ar Parvez – Developer Portfolio" />
-    <meta property="og:logo" content="./assets/ar-parvez-logo.png" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Ar Parvez" />
+    <meta property="og:url" content="https://arparvez.vercel.app/" />
+    <meta property="og:title" content="Ar Parvez — WordPress & Shopify Developer + SEO Expert" />
     <meta
       property="og:description"
-      content="PHP and WordPress developer portfolio"
+      content="Fast, SEO-ready WordPress & Shopify websites, custom plugins and technical SEO. 40+ sites delivered over 6+ years."
     />
-    <meta property="og:url" content="https://arparvez.vercel.app" />
-    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://arparvez.vercel.app/assets/Ar%20parvez-og-image.jpg" />
+    <meta property="og:image:alt" content="Ar Parvez — WordPress, Shopify developer and SEO expert" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <link rel="shortcut icon" href="./assets/favicon.png" />
-    <link rel="stylesheet" href="style.css" />
+    <meta name="twitter:site" content="@Arparvez1" />
+    <meta name="twitter:creator" content="@Arparvez1" />
+    <meta name="twitter:title" content="Ar Parvez — WordPress & Shopify Developer + SEO Expert" />
+    <meta
+      name="twitter:description"
+      content="Fast, SEO-ready WordPress & Shopify websites, custom plugins and technical SEO."
+    />
+    <meta name="twitter:image" content="https://arparvez.vercel.app/assets/Ar%20parvez-og-image.jpg" />
+
+    <link rel="icon" type="image/png" href="./assets/favicon.png" />
+    <link rel="apple-touch-icon" href="./assets/favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap"
       rel="stylesheet"
     />
+    <link rel="preload" as="image" href="./assets/sbteng-project-thumb.jpg" />
+    <link rel="stylesheet" href="style.css" />
 
+    <!-- Structured data -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Ar Parvez",
-        "url": "https://arparvez.vercel.app",
-        "jobTitle": "WordPress, Webflow, PHP & Shopify Developer",
-        "sameAs": ["https://github.com/arparvezz/arparvez"]
+        "@graph": [
+          {
+            "@type": "Person",
+            "@id": "https://arparvez.vercel.app/#person",
+            "name": "Ar Parvez",
+            "url": "https://arparvez.vercel.app/",
+            "image": "https://arparvez.vercel.app/assets/ar%20parvez.jpg",
+            "email": "mailto:arparvez.dev@gmail.com",
+            "jobTitle": "WordPress & Shopify Developer, SEO Expert",
+            "knowsAbout": [
+              "WordPress development",
+              "WordPress plugin development",
+              "Shopify development",
+              "Shopify Liquid",
+              "Webflow",
+              "WooCommerce",
+              "PHP",
+              "MySQL",
+              "JavaScript",
+              "Search engine optimization",
+              "Technical SEO",
+              "Core Web Vitals",
+              "Website speed optimization",
+              "WordPress malware removal"
+            ],
+            "sameAs": [
+              "https://github.com/arparvezz",
+              "https://www.linkedin.com/in/arparvez/",
+              "https://x.com/Arparvez1"
+            ]
+          },
+          {
+            "@type": "ProfessionalService",
+            "@id": "https://arparvez.vercel.app/#service",
+            "name": "Ar Parvez — WordPress, Shopify & SEO Services",
+            "url": "https://arparvez.vercel.app/",
+            "image": "https://arparvez.vercel.app/assets/Ar%20parvez-og-image.jpg",
+            "email": "arparvez.dev@gmail.com",
+            "founder": { "@id": "https://arparvez.vercel.app/#person" },
+            "areaServed": "Worldwide",
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Web development & SEO services",
+              "itemListElement": [
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "WordPress Website Design & Development" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Shopify Store Design & Development" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "SEO — Technical, On-page & Shopify SEO" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Custom WordPress Plugin Development" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Website Speed Optimization" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "WordPress Malware Removal" } }
+              ]
+            }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://arparvez.vercel.app/#website",
+            "url": "https://arparvez.vercel.app/",
+            "name": "Ar Parvez",
+            "publisher": { "@id": "https://arparvez.vercel.app/#person" },
+            "inLanguage": "en"
+          }
+        ]
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Should I build my website on WordPress or Shopify?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Choose Shopify if selling products is the core of your business and you want hosting, checkout and security handled for you. Choose WordPress (with WooCommerce if needed) when content, SEO flexibility, custom functionality or multilingual setups matter most. I build on both and will recommend the platform that fits your goals and budget." }
+          },
+          {
+            "@type": "Question",
+            "name": "Is SEO included when you build a website?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Every build ships SEO-ready: clean semantic HTML, a logical heading structure, schema markup, XML sitemap, optimized images, meta titles and descriptions, and strong Core Web Vitals. Ongoing SEO such as keyword research, content strategy and link building is available as a separate service." }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does a WordPress or Shopify website take?",
+            "acceptedAnswer": { "@type": "Answer", "text": "A landing page usually takes a few days, a business website one to three weeks, and a full eCommerce store two to five weeks depending on products, integrations and content. You get a clear timeline before work starts." }
+          },
+          {
+            "@type": "Question",
+            "name": "Can you build a custom WordPress plugin for my business?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. I have built 5+ custom WordPress plugins using an AI-assisted (vibe coding) workflow combined with hand-written PHP and JavaScript, then reviewed and tested for security and performance. Typical plugins add custom tools, dashboards, calculators or integrations that off-the-shelf plugins can't handle." }
+          },
+          {
+            "@type": "Question",
+            "name": "Can you make my slow website faster?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. I audit Core Web Vitals, then fix the causes: heavy themes and plugins, unoptimized images, render-blocking CSS and JavaScript, missing caching and slow hosting configuration. Faster pages improve user experience, conversions and search rankings." }
+          },
+          {
+            "@type": "Question",
+            "name": "My WordPress site was hacked. Can you fix it?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. I scan and remove malicious code, backdoors and spam injections, restore clean files, update core, themes and plugins, and harden the site with security measures to prevent re-infection. I can also help request removal of Google security warnings." }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you work with clients outside your country?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. I work remotely with founders, agencies and marketing teams worldwide, including clients in Europe such as Austria. Communication happens over email, WhatsApp or LinkedIn, and I respond within 24 hours." }
+          }
+        ]
       }
     </script>
   </head>
   <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- SVG icon sprite -->
+    <svg width="0" height="0" style="position: absolute" aria-hidden="true">
+      <defs>
+        <symbol id="i-ext" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></symbol>
+        <symbol id="i-arrow" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></symbol>
+        <symbol id="i-github" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" /></symbol>
+        <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" /><rect x="2" y="9" width="4" height="12" /><circle cx="4" cy="4" r="2" /></symbol>
+        <symbol id="i-x" viewBox="0 0 24 24"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" /></symbol>
+        <symbol id="i-mail" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" /><polyline points="22,6 12,13 2,6" /></symbol>
+        <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" /></symbol>
+        <symbol id="i-folder" viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z" /></symbol>
+        <symbol id="i-plug" viewBox="0 0 24 24"><path d="M9 2v6M15 2v6M6 8h12v4a6 6 0 0 1-12 0z" /><path d="M12 18v4" /></symbol>
+      </defs>
+    </svg>
+
     <!-- Loader -->
-    <div id="loader" class="loader">
+    <div id="loader" class="loader" aria-hidden="true">
+      <div class="loader-word"><span>A</span><span>R</span><span>.</span></div>
       <div class="loader-bar"></div>
     </div>
 
+    <!-- Cursor spotlight (desktop only) -->
+    <div class="cursor-glow" aria-hidden="true"></div>
+    <div class="scroll-progress" aria-hidden="true"></div>
+
     <!-- Navigation -->
     <header id="navbar" class="navbar">
-      <nav class="nav-container">
-        <a href="#hero" class="logo">
-          <img
-            class="logo-image"
-            src="./assets/ar-parvez-logo.png"
-            alt="Ar Parvez logo"
-          />
+      <nav class="nav-container" aria-label="Main navigation">
+        <a href="#hero" class="logo" aria-label="Ar Parvez — home">
+          <img class="logo-image" src="./assets/ar-parvez-logo.png" alt="Ar Parvez logo" width="44" height="44" />
         </a>
-        <button
-          class="nav-toggle"
-          id="navToggle"
-          aria-label="Toggle navigation"
-        >
-          <span></span>
-          <span></span>
-          <span></span>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navLinks">
+          <span></span><span></span><span></span>
         </button>
         <ul class="nav-links" id="navLinks">
-          <li>
-            <a href="#about"><span class="nav-number">01.</span> About</a>
-          </li>
-          <li>
-            <a href="#services"><span class="nav-number">02.</span> Services</a>
-          </li>
-          <li>
-            <a href="#projects"><span class="nav-number">03.</span> Projects</a>
-          </li>
-          <li>
-            <a href="#contact"><span class="nav-number">04.</span> Contact</a>
-          </li>
-          <li>
-            <a href="mailto:arparvez.dev@gmail.com" class="nav-cta"
-              >Say Hello</a
-            >
-          </li>
+          <li><a href="#about"><span class="nav-number">01.</span> <span class="binary" data-binary>About</span></a></li>
+          <li><a href="#services"><span class="nav-number">02.</span> <span class="binary" data-binary>Services</span></a></li>
+          <li><a href="#projects"><span class="nav-number">03.</span> <span class="binary" data-binary>Projects</span></a></li>
+          <li><a href="#faq"><span class="nav-number">04.</span> <span class="binary" data-binary>FAQ</span></a></li>
+          <li><a href="#contact"><span class="nav-number">05.</span> <span class="binary" data-binary>Contact</span></a></li>
+          <li><a href="mailto:arparvez.dev@gmail.com" class="nav-cta magnetic">Say Hello</a></li>
         </ul>
       </nav>
     </header>
@@ -94,384 +215,289 @@
     <!-- Side Elements -->
     <div class="side-element side-left">
       <ul class="side-social">
-        <li>
-          <a
-            href="https://github.com/arparvezz"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="GitHub"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path
-                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
-              />
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://www.linkedin.com/in/arparvez/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="LinkedIn"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path
-                d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
-              />
-              <rect x="2" y="9" width="4" height="12" />
-              <circle cx="4" cy="4" r="2" />
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://x.com/Arparvez1"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Twitter/X"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path
-                d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"
-              />
-            </svg>
-          </a>
-        </li>
-        <!-- TODO: Replace with your WhatsApp number -->
-        <li>
-          <a
-            href="https://wa.me/8801876857950"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="WhatsApp"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-            >
-              <path
-                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
-              />
-            </svg>
-          </a>
-        </li>
+        <li><a href="https://github.com/arparvezz" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg class="ico" width="20" height="20"><use href="#i-github" /></svg></a></li>
+        <li><a href="https://www.linkedin.com/in/arparvez/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg class="ico" width="20" height="20"><use href="#i-linkedin" /></svg></a></li>
+        <li><a href="https://x.com/Arparvez1" target="_blank" rel="noopener noreferrer" aria-label="Twitter/X"><svg class="ico" width="20" height="20"><use href="#i-x" /></svg></a></li>
+        <li><a href="https://wa.me/8801876857950" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg class="ico" width="20" height="20"><use href="#i-wa" /></svg></a></li>
       </ul>
       <div class="side-line"></div>
     </div>
-
     <div class="side-element side-right">
-      <a href="mailto:arparvez.dev@gmail.com" class="side-email"
-        >arparvez.dev@gmail.com</a
-      >
+      <a href="mailto:arparvez.dev@gmail.com" class="side-email">arparvez.dev@gmail.com</a>
       <div class="side-line"></div>
     </div>
 
-    <!-- Main Content -->
-    <main>
-      <!-- Hero Section -->
-      <section id="hero" class="section hero">
-        <div class="container">
-          <p class="hero-greeting fade-up">Hi, my name is</p>
-          <h1 class="hero-name fade-up">Ar Parvez.</h1>
-          <h2 class="hero-tagline fade-up">
-            I design and build conversion-focused web experiences.
-          </h2>
+    <main id="main">
+      <!-- ============ HERO ============ -->
+      <section id="hero" class="section hero" aria-labelledby="hero-title">
+        <canvas class="contour-canvas" aria-hidden="true"></canvas>
+        <div class="hero-ribbon" aria-hidden="true"></div>
+        <div class="container hero-inner">
+          <p class="hero-greeting fade-up">
+            <span class="status-dot" aria-hidden="true"></span> Available for new projects — Hi, my name is
+          </p>
+          <h1 id="hero-title" class="hero-title">
+            <span class="hero-name blur-text" data-split="chars">Ar Parvez.</span>
+            <span class="hero-role fade-up">
+              WordPress &amp; Shopify Developer
+              <span class="serif">+</span> SEO Expert
+            </span>
+          </h1>
+          <p class="hero-tagline fade-up">
+            I build
+            <span class="flip-words" data-words="conversion-focused websites|high-converting Shopify stores|custom WordPress plugins|SEO-ready experiences|lightning-fast pages">conversion-focused websites</span><span class="caret" aria-hidden="true"></span>
+          </p>
           <p class="hero-description fade-up">
-            I craft custom WordPress, Webflow and Shopify sites with fast performance,
-            clean code, and thoughtful UX. From landing pages to full eCommerce
-            builds, I translate business goals into measurable results — with
-            <strong>40+ sites</strong> delivered over <strong>6+ years</strong>.
+            I craft custom WordPress, Shopify and Webflow sites with fast performance,
+            clean code, thoughtful UX and search-first structure. From landing pages to
+            full eCommerce builds and custom plugins, I translate business goals into
+            measurable results — with <strong>40+ sites</strong> delivered over
+            <strong>6+ years</strong> and <strong>5+ custom plugins</strong> shipped.
           </p>
           <div class="hero-cta fade-up">
-            <a href="#projects" class="btn btn-outline">View my projects</a>
+            <a href="#projects" class="btn btn-primary magnetic"><span>View my projects</span><svg class="ico" width="18" height="18"><use href="#i-arrow" /></svg></a>
+            <a href="#contact" class="btn btn-ghost magnetic"><span>Start a project</span></a>
           </div>
         </div>
+        <a href="#about" class="scroll-cue" aria-label="Scroll to About section"><span></span></a>
       </section>
 
-      <!-- About Section -->
-      <section id="about" class="section about">
+      <!-- Tech marquee -->
+      <div class="marquee" aria-label="Technologies I work with">
+        <div class="marquee-track">
+          <ul>
+            <li>WordPress</li><li>Shopify</li><li>Technical SEO</li><li>Webflow</li><li>WooCommerce</li><li>Shopify Liquid</li><li>Elementor Pro</li><li>PHP &amp; MySQL</li><li>Core Web Vitals</li><li>Schema Markup</li><li>Custom Plugins</li><li>JavaScript</li>
+          </ul>
+          <ul aria-hidden="true">
+            <li>WordPress</li><li>Shopify</li><li>Technical SEO</li><li>Webflow</li><li>WooCommerce</li><li>Shopify Liquid</li><li>Elementor Pro</li><li>PHP &amp; MySQL</li><li>Core Web Vitals</li><li>Schema Markup</li><li>Custom Plugins</li><li>JavaScript</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Stats -->
+      <section class="stats" aria-label="Key numbers">
+        <div class="container"><div class="stats-grid">
+          <div class="stat fade-up"><p class="stat-num"><span class="odometer" data-to="40">0</span>+</p><p class="stat-label">Websites delivered</p></div>
+          <div class="stat fade-up"><p class="stat-num"><span class="odometer" data-to="6">0</span>+</p><p class="stat-label">Years of experience</p></div>
+          <div class="stat fade-up"><p class="stat-num"><span class="odometer" data-to="5">0</span>+</p><p class="stat-label">Custom WordPress plugins</p></div>
+          <div class="stat fade-up"><p class="stat-num"><span class="odometer" data-to="24">0</span>h</p><p class="stat-label">Response time</p></div>
+        </div></div>
+      </section>
+
+      <!-- ============ ABOUT ============ -->
+      <section id="about" class="section about" aria-labelledby="about-title">
         <div class="container">
-          <h2 class="section-heading fade-up">
+          <h2 id="about-title" class="section-heading fade-up">
             <span class="section-number">01.</span> About Me
           </h2>
           <div class="about-content">
             <div class="about-text fade-up">
-              <p>
-                I work closely with founders and marketing teams to align
-                technical decisions with business outcomes. Expect clear
+              <p class="highlight-text">
+                I'm Ar Parvez, a <mark>WordPress and Shopify developer</mark> and
+                <mark>SEO expert</mark>. I work closely with founders and marketing teams
+                to align technical decisions with business outcomes. Expect clear
                 communication, transparent timelines, and clean documentation.
               </p>
-              <p>
-                Every build is optimized for speed, accessibility, and
-                conversions. I bring UI precision and backend reliability to
-                every project I ship. With
-                <strong>6+ years</strong> of experience and
-                <strong>40+ sites</strong>
+              <p class="highlight-text">
+                Every build is optimized for speed, accessibility, and conversions. I bring
+                UI precision and backend reliability to every project I ship. With
+                <strong>6+ years</strong> of experience and <strong>40+ sites</strong>
                 delivered worldwide, I specialize in responsive layouts,
-                SEO-ready structure, and reusable components for long-term
-                scale.
+                <mark>SEO-ready structure</mark>, and reusable components for long-term scale.
+              </p>
+              <p>
+                Lately I've been combining hand-written PHP and JavaScript with an
+                AI-assisted <em>vibe coding</em> workflow to ship
+                <strong>5+ custom WordPress plugins</strong> — faster turnaround, with every
+                line reviewed and tested before it goes live. On the marketing side, I help
+                businesses rank with technical SEO, on-page optimization, Shopify SEO and
+                Core Web Vitals improvements, so the site doesn't just look good — it gets found.
               </p>
               <p>Here are the technologies I work with:</p>
               <ul class="skills-list">
                 <li>WordPress</li>
+                <li>Shopify &amp; Liquid</li>
                 <li>Webflow</li>
-                <li>PHP & MySQL</li>
+                <li>PHP &amp; MySQL</li>
                 <li>Elementor</li>
                 <li>WooCommerce</li>
-                <li>Shopify</li>
-                <li>HTML & CSS</li>
+                <li>Custom Plugin Development</li>
+                <li>Technical &amp; On-page SEO</li>
+                <li>HTML &amp; CSS</li>
                 <li>JavaScript</li>
                 <li>cPanel / Server Management</li>
                 <li>Site Speed Optimization</li>
                 <li>Malware Removal</li>
+                <li>AI-assisted Development</li>
               </ul>
             </div>
             <div class="about-image fade-up">
-              <div class="image-wrapper">
+              <div class="image-wrapper tilt" data-tilt="8">
                 <div class="image-placeholder">
-                  <img
-                    src="./assets/ar parvez.jpg"
-                    alt="Ar Parvez - PHP, WordPress, Webflow Developer"
-                    style="
-                      width: 100%;
-                      height: 100%;
-                      object-fit: cover;
-                      border-radius: 4px;
-                    "
-                  />
+                  <img src="./assets/ar parvez.jpg" alt="Ar Parvez — WordPress, Shopify developer and SEO expert" width="600" height="600" loading="lazy" decoding="async" />
+                  <span class="glare" aria-hidden="true"></span>
                 </div>
                 <div class="image-border"></div>
+                <div class="rotating-badge" aria-hidden="true">
+                  <svg viewBox="0 0 120 120">
+                    <defs><path id="circlePath" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0" /></defs>
+                    <text><textPath href="#circlePath">WORDPRESS • SHOPIFY • SEO • PLUGINS • </textPath></text>
+                  </svg>
+                  <span>AR</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Services Section -->
-      <section id="services" class="section services">
+      <!-- ============ SERVICES ============ -->
+      <section id="services" class="section services" aria-labelledby="services-title">
         <div class="container">
-          <h2 class="section-heading fade-up">
+          <h2 id="services-title" class="section-heading fade-up">
             <span class="section-number">02.</span> What I Do
           </h2>
+          <p class="section-intro fade-up">
+            End-to-end web development and SEO services for businesses that want a website
+            that loads fast, ranks well and turns visitors into customers.
+          </p>
           <div class="services-grid">
-            <div class="service-card fade-up">
-              <div class="service-icon">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="40"
-                  height="40"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
-                  <line x1="8" y1="21" x2="16" y2="21" />
-                  <line x1="12" y1="17" x2="12" y2="21" />
-                </svg>
-              </div>
+            <article class="service-card aura fade-up" data-aura="a">
+              <div class="aura-bg" aria-hidden="true"></div>
+              <div class="service-icon"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2" /><line x1="8" y1="21" x2="16" y2="21" /><line x1="12" y1="17" x2="12" y2="21" /></svg></div>
               <h3>WordPress Website Design</h3>
               <p>
-                build custom WordPress websites that blend stunning design with
-                powerful functionality. From business to Ecommerce sites, I
-                create responsive, user-friendly platforms tailored to your
-                unique brand and audience.
+                I build custom WordPress websites that blend stunning design with powerful
+                functionality. From business to eCommerce sites, I create responsive,
+                user-friendly platforms tailored to your unique brand and audience — built
+                with Elementor, WooCommerce or custom themes.
               </p>
-            </div>
+              <ul class="service-tags"><li>Elementor Pro</li><li>WooCommerce</li><li>WPML</li></ul>
+            </article>
 
-            <div class="service-card fade-up">
-              <div class="service-icon">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="40"
-                  height="40"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <circle cx="9" cy="21" r="1" />
-                  <circle cx="20" cy="21" r="1" />
-                  <path
-                    d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
-                  />
-                </svg>
-              </div>
-              <h3>Shopify Store Design</h3>
+            <article class="service-card aura fade-up" data-aura="b">
+              <div class="aura-bg" aria-hidden="true"></div>
+              <div class="service-icon"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1" /><circle cx="20" cy="21" r="1" /><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" /></svg></div>
+              <h3>Shopify Store Design &amp; Development</h3>
               <p>
-                I create high-converting Shopify stores that look great and sell
-                better. From product setup to payment integration, I build
-                seamless, mobile-optimized shopping experiences that drive sales
-                and growth.
+                I create high-converting Shopify stores that look great and sell better.
+                From product setup and custom Liquid sections to payment integration, I build
+                seamless, mobile-optimized shopping experiences that drive sales and growth.
               </p>
-            </div>
+              <ul class="service-tags"><li>Liquid</li><li>Custom Themes</li><li>CRO</li></ul>
+            </article>
 
-            <div class="service-card fade-up">
-              <div class="service-icon">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="40"
-                  height="40"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
-                </svg>
-              </div>
+            <article class="service-card aura fade-up" data-aura="c">
+              <div class="aura-bg" aria-hidden="true"></div>
+              <div class="service-icon"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7" /><line x1="21" y1="21" x2="16.65" y2="16.65" /><polyline points="8 12 10 10 12 12 14 9" /></svg></div>
+              <h3>SEO — Technical, On-page &amp; Shopify SEO</h3>
+              <p>
+                I help websites rank higher on Google. Technical audits, crawl and index
+                fixes, keyword-mapped page structure, schema markup, internal linking and
+                Shopify SEO — all aimed at more qualified organic traffic, not vanity metrics.
+              </p>
+              <ul class="service-tags"><li>Audits</li><li>Schema</li><li>Keyword Mapping</li></ul>
+            </article>
+
+            <article class="service-card aura fade-up" data-aura="d">
+              <div class="aura-bg" aria-hidden="true"></div>
+              <div class="service-icon"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="#i-plug" /></svg></div>
+              <h3>Custom WordPress Plugin Development</h3>
+              <p>
+                Need a feature no plugin offers? I build custom WordPress plugins — tools,
+                dashboards, calculators and integrations — using an AI-assisted vibe coding
+                workflow plus hand-written PHP, reviewed for security and performance.
+              </p>
+              <ul class="service-tags"><li>PHP</li><li>REST API</li><li>Vibe Coding</li></ul>
+            </article>
+
+            <article class="service-card aura fade-up" data-aura="e">
+              <div class="aura-bg" aria-hidden="true"></div>
+              <div class="service-icon"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" /></svg></div>
               <h3>Website Speed Optimization</h3>
               <p>
-                I optimize websites to load instantly, improving user experience
-                and search rankings. Through code refinement and image
-                compression, I boost your site speed and keep visitors engaged.
+                I optimize websites to load instantly, improving user experience and search
+                rankings. Through code refinement, image compression, caching and Core Web
+                Vitals fixes (LCP, INP, CLS), I boost your site speed and keep visitors engaged.
               </p>
-            </div>
+              <ul class="service-tags"><li>Core Web Vitals</li><li>Caching</li><li>Images</li></ul>
+            </article>
 
-            <div class="service-card fade-up">
-              <div class="service-icon">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="40"
-                  height="40"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                </svg>
-              </div>
+            <article class="service-card aura fade-up" data-aura="f">
+              <div class="aura-bg" aria-hidden="true"></div>
+              <div class="service-icon"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /></svg></div>
               <h3>WordPress Malware Removal</h3>
               <p>
-                thoroughly scan and remove malicious code from WordPress sites,
-                restoring functionality and security. Post-cleanup, I implement
-                protective measures to prevent future attacks and data loss.
+                I thoroughly scan and remove malicious code from WordPress sites, restoring
+                functionality and security. Post-cleanup, I implement protective measures to
+                prevent future attacks and data loss — and help clear Google warnings.
               </p>
-            </div>
+              <ul class="service-tags"><li>Cleanup</li><li>Hardening</li><li>Backups</li></ul>
+            </article>
           </div>
         </div>
       </section>
 
-      <!-- Projects Section -->
-      <section id="projects" class="section projects">
+      <!-- ============ PROCESS ============ -->
+      <section class="section process" aria-labelledby="process-title">
         <div class="container">
-          <h2 class="section-heading fade-up">
+          <h2 id="process-title" class="section-heading fade-up">
+            <span class="section-number">—</span> How I Work
+          </h2>
+          <ol class="process-list">
+            <li class="process-step fade-up">
+              <span class="step-num">01</span>
+              <h3>Discover</h3>
+              <p>We define goals, audience and keywords. I review your current site, competitors and search data so the build starts from strategy.</p>
+            </li>
+            <li class="process-step fade-up">
+              <span class="step-num">02</span>
+              <h3>Design &amp; Build</h3>
+              <p>From Figma or from scratch, I develop on WordPress, Shopify or Webflow with clean code, responsive layouts and an SEO-ready page structure.</p>
+            </li>
+            <li class="process-step fade-up">
+              <span class="step-num">03</span>
+              <h3>Optimize</h3>
+              <p>Speed, Core Web Vitals, on-page SEO, schema markup and accessibility checks — tested on real devices before anything goes live.</p>
+            </li>
+            <li class="process-step fade-up">
+              <span class="step-num">04</span>
+              <h3>Launch &amp; Grow</h3>
+              <p>Launch with analytics and Search Console set up, documentation for your team, and ongoing support, SEO and improvements when you need them.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- ============ PROJECTS ============ -->
+      <section id="projects" class="section projects" aria-labelledby="projects-title">
+        <div class="container">
+          <h2 id="projects-title" class="section-heading fade-up">
             <span class="section-number">03.</span> Some Things I've Built
           </h2>
 
-          <!-- Featured Projects -->
           <div class="projects-featured">
             <article class="project-featured fade-up">
               <div class="project-content">
                 <p class="project-overline">Featured Project</p>
-                <h3 class="project-title">
-                  <a
-                    href="https://sbteng.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >SBT Engineering</a
-                  >
-                </h3>
+                <h3 class="project-title"><a href="https://sbteng.com/" target="_blank" rel="noopener noreferrer">SBT Engineering</a></h3>
                 <div class="project-description">
                   <p>
-                    Custom WordPress website built with Elementor & Elementor
-                    Pro from Figma design, featuring structured engineering
-                    services, conversion-focused lead funnels, and easy backend
-                    content management for internal teams.
+                    Custom WordPress website built with Elementor &amp; Elementor Pro from Figma
+                    design, featuring structured engineering services, conversion-focused lead
+                    funnels, and easy backend content management for internal teams.
                   </p>
                 </div>
-                <ul class="project-tech">
-                  <li>WordPress</li>
-                  <li>Elementor</li>
-                  <li>Elementor Pro</li>
-                </ul>
+                <ul class="project-tech"><li>WordPress</li><li>Elementor</li><li>Elementor Pro</li></ul>
                 <div class="project-links">
-                  <a
-                    href="https://sbteng.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="External Link"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="22"
-                      height="22"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path
-                        d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
-                      />
-                      <polyline points="15 3 21 3 21 9" />
-                      <line x1="10" y1="14" x2="21" y2="3" />
-                    </svg>
-                  </a>
+                  <a href="https://sbteng.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit SBT Engineering website"><svg class="ico" width="22" height="22"><use href="#i-ext" /></svg></a>
                 </div>
               </div>
               <div class="project-image">
-                <a
-                  href="https://sbteng.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href="https://sbteng.com/" target="_blank" rel="noopener noreferrer" class="tilt" data-tilt="6" tabindex="-1" aria-hidden="true">
                   <div class="project-image-placeholder">
-                    <img
-                      src="./assets/sbteng-project-thumb.jpg"
-                      alt="SBT Engineering project preview"
-                      style="
-                        width: 100%;
-                        height: 100%;
-                        object-fit: cover;
-                        border-radius: 4px;
-                      "
-                    />
+                    <img src="./assets/sbteng-project-thumb.jpg" alt="SBT Engineering WordPress website preview" width="1200" height="750" loading="lazy" decoding="async" />
+                    <span class="glare"></span>
                   </div>
                 </a>
               </div>
@@ -480,71 +506,24 @@
             <article class="project-featured fade-up">
               <div class="project-content">
                 <p class="project-overline">Business Website</p>
-                <h3 class="project-title">
-                  <a
-                    href="https://auge4.at/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Auge4</a
-                  >
-                </h3>
+                <h3 class="project-title"><a href="https://auge4.at/" target="_blank" rel="noopener noreferrer">Auge4</a></h3>
                 <div class="project-description">
                   <p>
-                    Multilingual doctor’s website for Austria built from Figma
-                    using Elementor, Elementor Pro, and WPML, featuring
-                    structured medical services, localized content management,
-                    and patient-focused appointment lead generation.
+                    Multilingual doctor’s website for Austria built from Figma using Elementor,
+                    Elementor Pro, and WPML, featuring structured medical services, localized
+                    content management, and patient-focused appointment lead generation.
                   </p>
                 </div>
-                <ul class="project-tech">
-                  <li>WordPress</li>
-                  <li>Elementor</li>
-                  <li>WPML</li>
-                </ul>
+                <ul class="project-tech"><li>WordPress</li><li>Elementor</li><li>WPML</li></ul>
                 <div class="project-links">
-                  <a
-                    href="https://auge4.at/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="External Link"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="22"
-                      height="22"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path
-                        d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
-                      />
-                      <polyline points="15 3 21 3 21 9" />
-                      <line x1="10" y1="14" x2="21" y2="3" />
-                    </svg>
-                  </a>
+                  <a href="https://auge4.at/" target="_blank" rel="noopener noreferrer" aria-label="Visit Auge4 website"><svg class="ico" width="22" height="22"><use href="#i-ext" /></svg></a>
                 </div>
               </div>
               <div class="project-image">
-                <a
-                  href="https://auge4.at/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href="https://auge4.at/" target="_blank" rel="noopener noreferrer" class="tilt" data-tilt="6" tabindex="-1" aria-hidden="true">
                   <div class="project-image-placeholder">
-                    <img
-                      src="./assets/auge4-project-thumb.jpg"
-                      alt="The Delicious project preview"
-                      style="
-                        width: 100%;
-                        height: 100%;
-                        object-fit: cover;
-                        border-radius: 4px;
-                      "
-                    />
+                    <img src="./assets/auge4-project-thumb.jpg" alt="Auge4 multilingual doctor website preview" width="1200" height="750" loading="lazy" decoding="async" />
+                    <span class="glare"></span>
                   </div>
                 </a>
               </div>
@@ -553,285 +532,114 @@
             <article class="project-featured fade-up">
               <div class="project-content">
                 <p class="project-overline">Ecommerce Website</p>
-                <h3 class="project-title">
-                  <a
-                    href="https://jannat-fashion.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Jannat Fashion</a
-                  >
-                </h3>
+                <h3 class="project-title"><a href="https://jannat-fashion.com/" target="_blank" rel="noopener noreferrer">Jannat Fashion</a></h3>
                 <div class="project-description">
                   <p>
-                    Custom eCommerce website built with WoodMart theme and
-                    Elementor, featuring advanced product filtering, dynamic
-                    promotions, optimized checkout flow, and tailored design
-                    customizations for a seamless shopping experience.
+                    Custom eCommerce website built with WoodMart theme and Elementor, featuring
+                    advanced product filtering, dynamic promotions, optimized checkout flow, and
+                    tailored design customizations for a seamless shopping experience.
                   </p>
                 </div>
-                <ul class="project-tech">
-                  <li>WordPress</li>
-                  <li>Woodmart</li>
-                  <li>Elementor</li>
-                </ul>
+                <ul class="project-tech"><li>WordPress</li><li>Woodmart</li><li>Elementor</li></ul>
                 <div class="project-links">
-                  <a
-                    href="https://jannat-fashion.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="External Link"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="22"
-                      height="22"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path
-                        d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
-                      />
-                      <polyline points="15 3 21 3 21 9" />
-                      <line x1="10" y1="14" x2="21" y2="3" />
-                    </svg>
-                  </a>
+                  <a href="https://jannat-fashion.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Jannat Fashion website"><svg class="ico" width="22" height="22"><use href="#i-ext" /></svg></a>
                 </div>
               </div>
               <div class="project-image">
-                <a
-                  href="https://jannat-fashion.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href="https://jannat-fashion.com/" target="_blank" rel="noopener noreferrer" class="tilt" data-tilt="6" tabindex="-1" aria-hidden="true">
                   <div class="project-image-placeholder">
-                    <img
-                      src="./assets/jannat-fashion-project-thumb.jpg"
-                      alt="Creative agency portfolio preview"
-                      style="
-                        width: 100%;
-                        height: 100%;
-                        object-fit: cover;
-                        border-radius: 4px;
-                      "
-                    />
+                    <img src="./assets/jannat-fashion-project-thumb.jpg" alt="Jannat Fashion WooCommerce store preview" width="1200" height="750" loading="lazy" decoding="async" />
+                    <span class="glare"></span>
                   </div>
                 </a>
               </div>
             </article>
           </div>
 
-          <!-- Other Projects Grid -->
+          <!-- Plugin lab -->
+          <div class="plugin-lab fade-up">
+            <div class="plugin-lab-head">
+              <p class="project-overline">Plugin Lab</p>
+              <h3 class="plugin-lab-title">
+                <span class="odometer" data-to="5">0</span>+ custom WordPress plugins,
+                <span class="serif">vibe-coded</span> &amp; hand-finished
+              </h3>
+              <p>
+                I use AI-assisted vibe coding to prototype fast, then hand-write and review the
+                critical PHP and JavaScript for security, performance and WordPress coding
+                standards. The result: custom functionality delivered in days, not months.
+              </p>
+            </div>
+            <ul class="plugin-flow" aria-label="Plugin development workflow">
+              <li><span>Spec</span></li>
+              <li><span>AI prototype</span></li>
+              <li><span>Hand-written core</span></li>
+              <li><span>Security review</span></li>
+              <li><span>Ship</span></li>
+            </ul>
+          </div>
+
+          <!-- Other Projects -->
           <div class="projects-other">
-            <h3 class="projects-other-title fade-up">
-              Other Noteworthy Projects
-            </h3>
+            <h3 class="projects-other-title fade-up">Other Noteworthy Projects</h3>
             <div class="projects-grid">
-              <article class="project-card fade-up">
+              <article class="project-card spotlight fade-up">
                 <div class="project-card-inner">
                   <div class="project-card-top">
-                    <div class="project-card-icon">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="40"
-                        height="40"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="1"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      >
-                        <path
-                          d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
-                        />
-                      </svg>
-                    </div>
-                    <div class="project-card-links">
-                      <a
-                        href="https://github.com/arparvezz/job-board"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="External Link"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="20"
-                          height="20"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        >
-                          <path
-                            d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
-                          />
-                          <polyline points="15 3 21 3 21 9" />
-                          <line x1="10" y1="14" x2="21" y2="3" />
-                        </svg>
-                      </a>
-                    </div>
+                    <div class="project-card-icon"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><use href="#i-plug" /></svg></div>
+                    <div class="project-card-links"><a href="https://colordudes.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Colordudes"><svg class="ico" width="20" height="20"><use href="#i-ext" /></svg></a></div>
                   </div>
-                  <h3 class="project-card-title">
-                    <a
-                      href="https://github.com/arparvezz/job-board"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      >PHP-MySQL Job board</a
-                    >
-                  </h3>
+                  <h3 class="project-card-title"><a href="https://colordudes.com/" target="_blank" rel="noopener noreferrer">Custom WordPress Plugin</a></h3>
                   <p class="project-card-desc">
-                    Job-board application built with Vanilla PHP and MySQL,
-                    featuring separate dashboards and functionalities for
-                    managers and applicants.
+                    SVG coloring WordPress plugin developed through vibe coding with 40% custom
+                    development for enhanced functionality and performance.
                   </p>
-                  <ul class="project-card-tech">
-                    <li>PHP</li>
-                    <li>MySQL</li>
-                    <li>JavaScript</li>
-                  </ul>
+                  <ul class="project-card-tech"><li>WordPress</li><li>PHP</li><li>JavaScript</li></ul>
                 </div>
               </article>
 
-              <article class="project-card fade-up">
+              <article class="project-card spotlight fade-up">
                 <div class="project-card-inner">
                   <div class="project-card-top">
-                    <div class="project-card-icon">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="40"
-                        height="40"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="1"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      >
-                        <path
-                          d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
-                        />
-                      </svg>
-                    </div>
-                    <div class="project-card-links">
-                      <a
-                        href="https://github.com/arparvezz/shopify-custom-theme-dev"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="External Link"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="20"
-                          height="20"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        >
-                          <path
-                            d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
-                          />
-                          <polyline points="15 3 21 3 21 9" />
-                          <line x1="10" y1="14" x2="21" y2="3" />
-                        </svg>
-                      </a>
-                    </div>
+                    <div class="project-card-icon"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><use href="#i-plug" /></svg></div>
                   </div>
-                  <h3 class="project-card-title">
-                    <a
-                      href="https://github.com/arparvezz/shopify-custom-theme-dev"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      >Custom Shopify Theme</a
-                    >
-                  </h3>
+                  <h3 class="project-card-title">Multi-store Profit Tracker Plugin</h3>
                   <p class="project-card-desc">
-                    Custom Shopify theme developed for advanced functionality
-                    and scalability, built with Shopify Liquid, JavaScript, and
-                    tailored custom logic for optimized performance and
-                    flexibility.
+                    WordPress plugin for marketplace sellers to track product costs, fees and
+                    profit across multiple stores, with separate client logins and dashboards.
                   </p>
-                  <ul class="project-card-tech">
-                    <li>Shopify</li>
-                    <li>Liquid</li>
-                    <li>JavaScript</li>
-                  </ul>
+                  <ul class="project-card-tech"><li>WordPress</li><li>PHP</li><li>MySQL</li></ul>
                 </div>
               </article>
 
-              <article class="project-card fade-up">
+              <article class="project-card spotlight fade-up">
                 <div class="project-card-inner">
                   <div class="project-card-top">
-                    <div class="project-card-icon">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="40"
-                        height="40"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="1"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      >
-                        <path
-                          d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
-                        />
-                      </svg>
-                    </div>
-                    <div class="project-card-links">
-                      <a
-                        href="https://colordudes.com/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="External Link"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="20"
-                          height="20"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        >
-                          <path
-                            d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
-                          />
-                          <polyline points="15 3 21 3 21 9" />
-                          <line x1="10" y1="14" x2="21" y2="3" />
-                        </svg>
-                      </a>
-                    </div>
+                    <div class="project-card-icon"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><use href="#i-folder" /></svg></div>
+                    <div class="project-card-links"><a href="https://github.com/arparvezz/shopify-custom-theme-dev" target="_blank" rel="noopener noreferrer" aria-label="Custom Shopify Theme on GitHub"><svg class="ico" width="20" height="20"><use href="#i-github" /></svg></a></div>
                   </div>
-                  <h3 class="project-card-title">
-                    <a
-                      href="https://colordudes.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      >Custom WordPress Plugin</a
-                    >
-                  </h3>
+                  <h3 class="project-card-title"><a href="https://github.com/arparvezz/shopify-custom-theme-dev" target="_blank" rel="noopener noreferrer">Custom Shopify Theme</a></h3>
                   <p class="project-card-desc">
-                    SVG coloring WordPress plugin developed through vibe coding
-                    with 40% custom development for enhanced functionality and
-                    performance.
+                    Custom Shopify theme developed for advanced functionality and scalability,
+                    built with Shopify Liquid, JavaScript, and tailored custom logic for optimized
+                    performance and flexibility.
                   </p>
-                  <ul class="project-card-tech">
-                    <li>WordPress</li>
-                    <li>PHP</li>
-                    <li>JavaScript</li>
-                  </ul>
+                  <ul class="project-card-tech"><li>Shopify</li><li>Liquid</li><li>JavaScript</li></ul>
+                </div>
+              </article>
+
+              <article class="project-card spotlight fade-up">
+                <div class="project-card-inner">
+                  <div class="project-card-top">
+                    <div class="project-card-icon"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><use href="#i-folder" /></svg></div>
+                    <div class="project-card-links"><a href="https://github.com/arparvezz/job-board" target="_blank" rel="noopener noreferrer" aria-label="PHP-MySQL Job board on GitHub"><svg class="ico" width="20" height="20"><use href="#i-github" /></svg></a></div>
+                  </div>
+                  <h3 class="project-card-title"><a href="https://github.com/arparvezz/job-board" target="_blank" rel="noopener noreferrer">PHP-MySQL Job board</a></h3>
+                  <p class="project-card-desc">
+                    Job-board application built with Vanilla PHP and MySQL, featuring separate
+                    dashboards and functionalities for managers and applicants.
+                  </p>
+                  <ul class="project-card-tech"><li>PHP</li><li>MySQL</li><li>JavaScript</li></ul>
                 </div>
               </article>
             </div>
@@ -839,96 +647,103 @@
         </div>
       </section>
 
-      <!-- Contact Section -->
-      <section id="contact" class="section contact">
+      <!-- ============ WHY / SEO CONTENT ============ -->
+      <section class="section why" aria-labelledby="why-title">
         <div class="container">
-          <p class="section-number fade-up">04. What's Next?</p>
-          <h2 class="contact-title fade-up">Let's Build Something Great</h2>
+          <h2 id="why-title" class="section-heading fade-up">
+            <span class="section-number">—</span> Why Work With Me
+          </h2>
+          <div class="why-grid">
+            <div class="why-text fade-up">
+              <p class="highlight-text">
+                Most websites fail for one of three reasons: they're <mark>slow</mark>, they're
+                <mark>invisible on Google</mark>, or they <mark>don't convert</mark>. As a developer
+                who also does SEO, I fix all three at the same time — instead of handing you
+                over between a designer, a developer and an SEO agency.
+              </p>
+              <p>
+                Whether you need a WordPress developer for a business website, a Shopify
+                developer for an online store, or an SEO expert to grow organic traffic, you
+                get one accountable person who understands both the code and the search results.
+              </p>
+            </div>
+            <ul class="why-list fade-up">
+              <li><strong>SEO built in, not bolted on</strong> semantic HTML, schema, sitemaps and keyword-mapped pages from day one.</li>
+              <li><strong>Performance first</strong> lean themes, optimized images and Core Web Vitals targets on every build.</li>
+              <li><strong>Custom when it matters</strong> custom plugins and Shopify sections instead of stacking 30 plugins.</li>
+              <li><strong>Clear communication</strong> transparent timelines, documentation and replies within 24 hours.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ FAQ ============ -->
+      <section id="faq" class="section faq" aria-labelledby="faq-title">
+        <div class="container">
+          <h2 id="faq-title" class="section-heading fade-up">
+            <span class="section-number">04.</span> Questions, Answered
+          </h2>
+          <div class="faq-list">
+            <details class="faq-item fade-up">
+              <summary>Should I build my website on WordPress or Shopify?</summary>
+              <div class="faq-body"><p>Choose <strong>Shopify</strong> if selling products is the core of your business and you want hosting, checkout and security handled for you. Choose <strong>WordPress</strong> (with WooCommerce if needed) when content, SEO flexibility, custom functionality or multilingual setups matter most. I build on both and will recommend the platform that fits your goals and budget.</p></div>
+            </details>
+            <details class="faq-item fade-up">
+              <summary>Is SEO included when you build a website?</summary>
+              <div class="faq-body"><p>Every build ships SEO-ready: clean semantic HTML, a logical heading structure, schema markup, XML sitemap, optimized images, meta titles and descriptions, and strong Core Web Vitals. Ongoing SEO such as keyword research, content strategy and link building is available as a separate service.</p></div>
+            </details>
+            <details class="faq-item fade-up">
+              <summary>How long does a WordPress or Shopify website take?</summary>
+              <div class="faq-body"><p>A landing page usually takes a few days, a business website one to three weeks, and a full eCommerce store two to five weeks depending on products, integrations and content. You get a clear timeline before work starts.</p></div>
+            </details>
+            <details class="faq-item fade-up">
+              <summary>Can you build a custom WordPress plugin for my business?</summary>
+              <div class="faq-body"><p>Yes. I have built 5+ custom WordPress plugins using an AI-assisted (vibe coding) workflow combined with hand-written PHP and JavaScript, then reviewed and tested for security and performance. Typical plugins add custom tools, dashboards, calculators or integrations that off-the-shelf plugins can't handle.</p></div>
+            </details>
+            <details class="faq-item fade-up">
+              <summary>Can you make my slow website faster?</summary>
+              <div class="faq-body"><p>Yes. I audit Core Web Vitals, then fix the causes: heavy themes and plugins, unoptimized images, render-blocking CSS and JavaScript, missing caching and slow hosting configuration. Faster pages improve user experience, conversions and search rankings.</p></div>
+            </details>
+            <details class="faq-item fade-up">
+              <summary>My WordPress site was hacked. Can you fix it?</summary>
+              <div class="faq-body"><p>Yes. I scan and remove malicious code, backdoors and spam injections, restore clean files, update core, themes and plugins, and harden the site with security measures to prevent re-infection. I can also help request removal of Google security warnings.</p></div>
+            </details>
+            <details class="faq-item fade-up">
+              <summary>Do you work with clients outside your country?</summary>
+              <div class="faq-body"><p>Yes. I work remotely with founders, agencies and marketing teams worldwide, including clients in Europe such as Austria. Communication happens over email, WhatsApp or LinkedIn, and I respond within 24 hours.</p></div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ CONTACT ============ -->
+      <section id="contact" class="section contact" aria-labelledby="contact-title">
+        <div class="contact-glow" aria-hidden="true"></div>
+        <div class="container">
+          <p class="section-number fade-up">05. What's Next?</p>
+          <h2 id="contact-title" class="contact-title blur-text" data-split="words">Let's Build Something Great</h2>
           <p class="contact-description fade-up">
-            Tell me about your project and I'll respond within 24 hours. Whether
-            you need a new WordPress website, a Shopify store, speed
-            optimization, or help with malware removal — I'm ready to help.
+            Tell me about your project and I'll respond within 24 hours. Whether you need a
+            new WordPress website, a Shopify store, SEO, a custom plugin, speed optimization,
+            or help with malware removal — I'm ready to help.
           </p>
           <div class="contact-buttons fade-up">
-            <a
-              href="mailto:arparvez.dev@gmail.com"
-              class="btn btn-outline btn-lg"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path
-                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
-                />
-                <polyline points="22,6 12,13 2,6" />
-              </svg>
-              Send Email
-            </a>
-            <!-- TODO: Replace with your WhatsApp number -->
-            <a
-              href="https://wa.me/8801876857950"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="btn btn-whatsapp btn-lg"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-              >
-                <path
-                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
-                />
-              </svg>
-              WhatsApp
-            </a>
-            <a
-              href="https://www.linkedin.com/in/arparvez/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="btn btn-outline btn-lg"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path
-                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
-                />
-                <rect x="2" y="9" width="4" height="12" />
-                <circle cx="4" cy="4" r="2" />
-              </svg>
-              LinkedIn
-            </a>
+            <a href="mailto:arparvez.dev@gmail.com" class="btn btn-primary btn-lg magnetic"><svg class="ico" width="20" height="20"><use href="#i-mail" /></svg><span>Send Email</span></a>
+            <a href="https://wa.me/8801876857950" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-lg magnetic"><svg class="ico" width="20" height="20"><use href="#i-wa" /></svg><span>WhatsApp</span></a>
+            <a href="https://www.linkedin.com/in/arparvez/" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-lg magnetic"><svg class="ico" width="20" height="20"><use href="#i-linkedin" /></svg><span>LinkedIn</span></a>
           </div>
         </div>
       </section>
     </main>
 
-    <!-- Footer -->
     <footer class="footer">
-      <div class="container">
-        <p>Crafted by <a href="#">Ar Parvez</a> with focus and ❤️.</p>
+      <div class="container footer-inner">
+        <p class="footer-big" aria-hidden="true">AR PARVEZ</p>
+        <p>WordPress &amp; Shopify Developer · SEO Expert · Custom Plugin Developer</p>
+        <p>Crafted by <a href="#hero">Ar Parvez</a> with focus and ❤️. © <span id="year">2026</span></p>
       </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
   </body>
 </html>

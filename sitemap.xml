@@ -1,6 +1,13 @@
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url>
-        <loc>https://arparvez.vercel.app/</loc>
-        <priority>1.0</priority>
-    </url>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://arparvez.vercel.app/</loc>
+    <lastmod>2026-11-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://arparvez.vercel.app/assets/ar%20parvez.jpg</image:loc>
+      <image:title>Ar Parvez — WordPress &amp; Shopify Developer and SEO Expert</image:title>
+    </image:image>
+  </url>
 </urlset>
