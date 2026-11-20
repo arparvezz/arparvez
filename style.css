@@ -855,7 +855,7 @@ strong {
    ============================================ */
 .contact {
   text-align: center;
-  max-width: 600px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 100px 25px 150px;
 }
@@ -867,15 +867,19 @@ strong {
 }
 
 .contact-title {
-  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-size: clamp(2rem, 5.5vw, 4.25rem);
+  line-height: 1.1;
   font-weight: 700;
   color: var(--text-heading);
   margin-bottom: 20px;
 }
 
 .contact-description {
+  max-width: 820px;
+  margin-left: auto;
+  margin-right: auto;
   color: var(--text-secondary);
-  font-size: 1.05rem;
+  font-size: 1.15rem;
   line-height: 1.7;
   margin-bottom: 40px;
 }
@@ -1258,4 +1262,15 @@ em { color: var(--green); font-style: normal; }
 }
 @media (max-width: 420px) {
   .about-stack .skills-list { grid-template-columns: 1fr; }
+}
+
+/* Contact — buttons on one line for desktop & tablet */
+.contact .container { max-width: 1200px; }
+@media (min-width: 481px) {
+  .contact-buttons { flex-direction: row; flex-wrap: nowrap; justify-content: center; }
+  .contact-buttons .btn-lg { width: auto; max-width: none; }
+}
+@media (min-width: 481px) and (max-width: 1024px) {
+  .contact-buttons { gap: 10px; }
+  .contact-buttons .btn-lg { padding: 13px 20px; font-size: 0.85rem; }
 }
