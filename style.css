@@ -1785,3 +1785,47 @@ h3, h4,
 
 /* Footer — single line */
 .footer p { margin: 0; }
+
+/* ============================================
+   Bullet & UI icons: Hugeicons Free (MIT): arrow-right-01, tick-02, add-01, minus-sign
+   ============================================ */
+:root {
+  --hi-chevron: url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2024%2024'%20fill%3D'none'%3E%3Cpath%20d%3D'M9.00005%206C9.00005%206%2015%2010.4189%2015%2012C15%2013.5812%209%2018%209%2018'%20stroke%3D'%23000'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%20stroke-width%3D'1.5'%2F%3E%3C%2Fsvg%3E");
+  --hi-check: url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2024%2024'%20fill%3D'none'%3E%3Cpath%20d%3D'M5%2014L8.5%2017.5L19%206.5'%20stroke%3D'%23000'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%20stroke-width%3D'1.5'%2F%3E%3C%2Fsvg%3E");
+  --hi-plus: url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2024%2024'%20fill%3D'none'%3E%3Cpath%20d%3D'M12.001%204.00101V20.001'%20stroke%3D'%23000'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%20stroke-width%3D'1.5'%2F%3E%3Cpath%20d%3D'M20.001%2012.001L4.00098%2012.001'%20stroke%3D'%23000'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%20stroke-width%3D'1.5'%2F%3E%3C%2Fsvg%3E");
+  --hi-minus: url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2024%2024'%20fill%3D'none'%3E%3Cpath%20d%3D'M20%2012L4%2012'%20stroke%3D'%23000'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%20stroke-width%3D'1.5'%2F%3E%3C%2Fsvg%3E");
+}
+.ico { stroke-width: 1.5; }
+
+/* Tech stack + experience bullets: chevron */
+.skills-list li, .about-stack .skills-list li { padding-left: 24px; position: relative; }
+.skills-list li::before, .jobs-panel ul li::before {
+  content: ''; position: absolute; left: 0; top: 50%; width: 16px; height: 16px; margin-top: -8px;
+  background: var(--text-heading); -webkit-mask: var(--hi-chevron) center / contain no-repeat; mask: var(--hi-chevron) center / contain no-repeat;
+}
+.jobs-panel ul li::before { top: 4px; margin-top: 0; width: 18px; height: 18px; }
+
+/* Why work with me: tick in black circle */
+.why-list li::before {
+  background: var(--lime); -webkit-mask: none; mask: none;
+  background-image: none;
+}
+.why-list li::after {
+  content: ''; position: absolute; left: 23px; top: 28px; width: 14px; height: 14px;
+  background: #fff; -webkit-mask: var(--hi-check) center / contain no-repeat; mask: var(--hi-check) center / contain no-repeat;
+}
+@media (max-width: 767px) { .why-list li::after { left: 19px; top: 26px; } }
+
+/* FAQ plus / minus */
+.faq-item summary::after { background-image: none !important; }
+.faq-item summary::before {
+  content: ''; position: absolute; right: 26px; top: 50%; width: 16px; height: 16px; margin-top: -8px; z-index: 1;
+  background: #fff; -webkit-mask: var(--hi-plus) center / contain no-repeat; mask: var(--hi-plus) center / contain no-repeat;
+}
+.faq-item[open] summary::before { -webkit-mask-image: var(--hi-minus); mask-image: var(--hi-minus); }
+@media (max-width: 767px) { .faq-item summary::before { right: 22px; } }
+
+/* Tech stack title icon */
+.stack-ico { color: var(--text-heading); flex-shrink: 0; }
+@media (max-width: 767px) { .stack-ico { width: 18px; height: 18px; } }
+.project-card-icon .ico { width: 32px; height: 32px; }
