@@ -1764,3 +1764,24 @@ h3, h4,
 .project-card-title, .project-card-title a, .project-title, .project-title a,
 .about-stack-title, .why-list strong, .faq-item summary,
 .projects-other-title, .plugin-lab-title { font-weight: 700; }
+
+/* "Technologies I work with" — one line on mobile */
+@media (max-width: 767px) {
+  .about-stack { padding: 22px 18px; }
+  .about-stack-title { font-size: 17px; line-height: 24px; white-space: nowrap; gap: 8px; margin-bottom: 16px; letter-spacing: -0.3px; }
+  .about-stack-title .section-number { display: inline; font-size: 12px; letter-spacing: 0; }
+}
+
+/* Drawer menu — left-aligned items */
+@media (max-width: 1095px) {
+  .nav-links { align-items: stretch; justify-content: flex-start; padding: 96px 28px 40px; gap: 2px; }
+  .nav-links li { width: 100%; }
+  .nav-links li a { display: flex; align-items: center; gap: 10px; text-align: left; justify-content: flex-start; padding: 14px 12px; border-radius: 8px; font-size: 17px; }
+  .nav-links li a:hover { background: var(--bg-secondary); }
+  .nav-links .nav-number { min-width: 26px; margin: 0; }
+  .nav-links li:last-child { margin-top: 18px; }
+  .nav-links .nav-cta { justify-content: center; margin-left: 0; width: 100%; }
+}
+
+/* Footer — single line */
+.footer p { margin: 0; }
