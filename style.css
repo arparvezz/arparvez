@@ -1757,3 +1757,10 @@ em { color: var(--text-heading); }
   --fa-minus: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3Cpath fill='%23ffffff' d='M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z'/%3E%3C/svg%3E");
 }
 .faq-item[open] summary::after { transform: none; background-image: var(--fa-minus); }
+
+/* Card headings, short headings & FAQ questions — 700 for visibility */
+h3, h4,
+.about-card h3, .service-card h3, .process-step h3, .jobs-panel h3,
+.project-card-title, .project-card-title a, .project-title, .project-title a,
+.about-stack-title, .why-list strong, .faq-item summary,
+.projects-other-title, .plugin-lab-title { font-weight: 700; }
