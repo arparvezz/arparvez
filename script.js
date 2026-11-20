@@ -195,3 +195,38 @@ document.querySelectorAll('.faq-item').forEach(item => {
 // Footer year
 const yearEl = document.getElementById('year');
 if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+// ============================================
+// Experience tabs (keyboard accessible)
+// ============================================
+(() => {
+  const tabs = Array.from(document.querySelectorAll('.jobs-tab'));
+  const list = document.querySelector('.jobs-tabs');
+  if (!tabs.length || !list) return;
+  const activate = (i, focus = false) => {
+    tabs.forEach((t, idx) => {
+      const on = idx === i;
+      t.classList.toggle('active', on);
+      t.setAttribute('aria-selected', String(on));
+      t.tabIndex = on ? 0 : -1;
+      document.getElementById(t.getAttribute('aria-controls')).hidden = !on;
+    });
+    const t = tabs[i];
+    list.style.setProperty('--ty', t.offsetTop + 'px');
+    list.style.setProperty('--tx', t.offsetLeft + 'px');
+    list.style.setProperty('--tw', t.offsetWidth + 'px');
+    if (focus) tabs[i].focus();
+  };
+  tabs.forEach((t, i) => {
+    t.addEventListener('click', () => activate(i));
+    t.addEventListener('keydown', (e) => {
+      const next = { ArrowDown: 1, ArrowRight: 1, ArrowUp: -1, ArrowLeft: -1 }[e.key];
+      if (next === undefined) return;
+      e.preventDefault();
+      activate((i + next + tabs.length) % tabs.length, true);
+    });
+  });
+  const current = () => Math.max(0, tabs.findIndex(t => t.classList.contains('active')));
+  window.addEventListener('resize', () => activate(current()));
+  activate(0);
+})();
