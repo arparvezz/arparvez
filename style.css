@@ -1,3 +1,11 @@
+/* Caveat (SIL Open Font License 1.1) — handwriting logo */
+@font-face {
+  font-family: 'Caveat';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400 700;
+  src: url('./assets/fonts/caveat-latin-wght-normal.woff2') format('woff2-variations');
+}
 /* Nunito (SIL Open Font License 1.1) — self-hosted variable font, free alternative to Cera Round Pro */
 @font-face {
   font-family: 'Nunito';
@@ -1829,3 +1837,11 @@ h3, h4,
 .stack-ico { color: var(--text-heading); flex-shrink: 0; }
 @media (max-width: 767px) { .stack-ico { width: 18px; height: 18px; } }
 .project-card-icon .ico { width: 32px; height: 32px; }
+
+/* Handwritten text logo */
+.logo-text { font-family: 'Caveat', cursive; font-size: 34px; font-weight: 700; line-height: 1; color: var(--text-heading); letter-spacing: 0; white-space: nowrap; display: inline-block; transform: rotate(-2deg); transition: transform 0.3s ease; }
+.logo:hover .logo-text { transform: rotate(0deg) scale(1.04); }
+@media (max-width: 767px) { .logo-text { font-size: 30px; } }
+
+/* About: tech stack panel only (cards removed) */
+.about-extra { display: block; }
